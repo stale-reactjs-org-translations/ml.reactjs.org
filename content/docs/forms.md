@@ -75,7 +75,7 @@ handleChange(event) {
 
 ## The textarea Tag {#the-textarea-tag}
 
-In HTML, a `<textarea>` element defines its text by its children:
+എച് ടി  എം എല്ലിൽ  ടെക്സ്റ്റ് ഏരിയയുടെ നിർവചനം അതിന്റെ ഓപ്പണിങ് -ക്ലോസിങ് ടാഗുകളുടെ ഇടയിലാണ്  
 
 ```html
 <textarea>
@@ -83,8 +83,7 @@ In HTML, a `<textarea>` element defines its text by its children:
 </textarea>
 ```
 
-In React, a `<textarea>` uses a `value` attribute instead. This way, a form using a `<textarea>` can be written very similarly to a form that uses a single-line input:
-
+React ൽ അതിനു പകരം `<textarea>` വാല്യൂ ആട്രിബ്യുട്ട ആണ് ഉപയോഗിക്കുന്നത് .ഒറ്റവരി ഇൻപുട്ട് സ്വീകരിക്കുന്ന ഫോം പോലെ തന്നെ നമുക്ക് `<textarea>` വെച്ചുള്ള  ഫോം നിര്മിക്കാവുന്നതാണ്  
 ```javascript{4-6,12-14,26}
 class EssayForm extends React.Component {
   constructor(props) {
@@ -120,11 +119,11 @@ class EssayForm extends React.Component {
 }
 ```
 
-Notice that `this.state.value` is initialized in the constructor, so that the text area starts off with some text in it.
+`this.state.value`ഒരു കൺസ്ട്രക്ടർ വെച്ച് ഇനിഷ്യലൈസ് ചെയ്തത് കൊണ്ടാണ് ടെക്സ്റ്റ് ഏരിയ ആദ്യമേ തന്നെ ചില ടെക്സ്റ്റ് കാണിക്കുന്നത് 
 
 ## The select Tag {#the-select-tag}
 
-In HTML, `<select>` creates a drop-down list. For example, this HTML creates a drop-down list of flavors:
+എച്ച് ടി എം എല്ലിൽ  `<select>` ഉപയോഗിച്ചാണ് ഡ്രോപ് ഡൗൺ ലിസ്റ്റ് ഉണ്ടാക്കുന്നത് .ഉദ്ദാഹരണത്തിനു ഈ ഫ്‌ളേവറുകളുടെ ഡ്രോപ്പ് ഡൗൺ ലിസ്റ്റ്  നോക്കുക 
 
 ```html
 <select>
@@ -135,7 +134,7 @@ In HTML, `<select>` creates a drop-down list. For example, this HTML creates a d
 </select>
 ```
 
-Note that the Coconut option is initially selected, because of the `selected` attribute. React, instead of using this `selected` attribute, uses a `value` attribute on the root `select` tag. This is more convenient in a controlled component because you only need to update it in one place. For example:
+Coconut ഓപ്ഷൻ സെലെക്ടഡ് ആയിരിക്കുന്നത് `selected` ആട്രിബ്യുട്ട  കാരണം ആണെന്ന് ശ്രദ്ധിക്കുക .ഇതിനു പകരം react ൽ  സെലക്ട് ന്റെ  റൂട്ടിൽ ഒരു `value` ആട്രിബ്യുട്ട് ഉപയോഗിക്കുകയാണ് ചെയ്യുക .ഒരിടത്ത്  മാത്രം മാറ്റം വരുത്തിയാൽ മതി എന്നത് കൊണ്ട് controlled component ഉപയോഗിക്കുന്നത് ഉപകാരപ്രദമായിരിക്കും .ഉദ്ദാഹരണം 
 
 ```javascript{4,10-12,24}
 class FlavorForm extends React.Component {
@@ -175,10 +174,9 @@ class FlavorForm extends React.Component {
 }
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/JbbEzX?editors=0010)
+[**Codepen ൽ ശ്രമിക്കുക **](https://codepen.io/gaearon/pen/JbbEzX?editors=0010)
 
-Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select>` all work very similarly - they all accept a `value` attribute that you can use to implement a controlled component.
-
+`<input type="text">`, `<textarea>`,`<select>` എന്നിവ  ഒരേപോലെ പ്രവർത്തിക്കുന്നു അതായത് `value` ആട്രിബ്യുട്ട സ്വീകരിക്കുന്നു .അതുപയോഗിച്ചു controlled components നിര്മിക്കാവുന്നതാണ് .
 > Note
 >
 > You can pass an array into the `value` attribute, allowing you to select multiple options in a `select` tag:
