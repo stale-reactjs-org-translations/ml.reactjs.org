@@ -9,7 +9,7 @@ redirect_from:
   - "docs/forms-zh-CN.html"
 ---
 
-HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
+React ഇൽ form എലമെന്റ് കളുടെ പ്രവർത്തനം ഇവക് ചില  internal state ഉള്ളതിനാൽ  മറ്റ് DOM എലെമെന്റ്കളിൽ നിന്ന് വ്യത്യസ്തമാണ് ..ഉദ്ദാഹരണമായി താഴെ തന്നിരിക്കുന്ന HTML ഇലെ ഫോം യൂസറിൽ  നിന്നും ഒരു പേര് സ്വീകരിക്കുന്നു .
 
 ```html
 <form>
@@ -21,15 +21,13 @@ HTML form elements work a little bit differently from other DOM elements in Reac
 </form>
 ```
 
-This form has the default HTML form behavior of browsing to a new page when the user submits the form. If you want this behavior in React, it just works. But in most cases, it's convenient to have a JavaScript function that handles the submission of the form and has access to the data that the user entered into the form. The standard way to achieve this is with a technique called "controlled components".
+ഈ ഫോം  നു സാധാരണ html  ഫോം ഒരു യൂസർ submit ചെയ്യുമ്പോ പുതിയ പേജ് ലോഡ്  ചെയ്യുന്ന ഡീഫോൾട് സ്വഭാവം ഉണ്ട് .react ഇലും നമുക് വേണമെങ്കിൽ ഈ സ്വഭാവം ഉപയോഗിക്കാം എങ്കിലും ഈ ഫോം സബ്മിഷൻ കൈകാര്യം ചെയ്യാനും യൂസർ എന്റർ ചെയ്ത വിവരങ്ങൾ അക്സസ്സ് ചെയ്യാനും ജാവാസ്ക്രിപ്റ്റ് ഫങ്ക്ഷന് എഴുതുന്നതാകും ഉത്തമം . ഇത് ചെയ്യാൻ സഹായിക്കുന്ന ഒരു ടെക്‌നിക്ക്  ആണ് "controlled  componenets "
 
 ## Controlled Components {#controlled-components}
 
-In HTML, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with [`setState()`](/docs/react-component.html#setstate).
+എച്  ടി  എം എല്ലിൽ  `<input>`, `<textarea>`,`<select>പോലുള്ള ഫോം എലെമെന്റുകൾ  അവരുടെ സ്വഭാവം യൂസർ നൽകുന്ന  ഇന്പുട് അനുസരിച്ചാണ് മാറ്റുന്നത് .എന്നാൽ റിയാക്റ്റിൽ  ഓരോ components ന്റെയും സ്വഭാവം സ്റ്റേറ്റ് പ്രോപ്പർട്ടിയിൽ സൂക്ഷിക്കുകയും  [`setState()`](/docs/react-component.html#setstate) എന്നിവ തിനനുസരിച്ച് മാത്രം മാറുകയും ചെയ്യുന്നു 
 
-We can combine the two by making the React state be the "single source of truth". Then the React component that renders a form also controls what happens in that form on subsequent user input. An input form element whose value is controlled by React in this way is called a "controlled component".
-
-For example, if we want to make the previous example log the name when it is submitted, we can write the form as a controlled component:
+ഉദ്ദാഹരണത്തിനു ,നമുക്ക്  മുൻപ് കണ്ട പേര് submit  ചെയ്യുന്ന ഉദാഹരണത്തിൽ പേര് ലോഗ് ചെയ്യണമെങ്കിൽ ഫോം നെ controlled component  ആയി എഴുതാം 
 
 ```javascript{4,10-12,24}
 class NameForm extends React.Component {
@@ -66,10 +64,9 @@ class NameForm extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/VmmPgp?editors=0010)
 
-Since the `value` attribute is set on our form element, the displayed value will always be `this.state.value`, making the React state the source of truth. Since `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
-
-With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input. For example, if we wanted to enforce that names are written with all uppercase letters, we could write `handleChange` as:
-
+`value ` atribute സെറ്റ് ചെയ്തിരിക്കുന്നതിനാൽ കാണിക്കുന്ന വാല്യൂ എപ്പോളും `this.state.value` ആയിരിക്കും . handleChange `ഓരോ തവണ കീ അമർത്തുമ്പോഴും റൺ ചെയ്യുന്നതിനാൽ react സ്റ്റേറ്റ് ,കാണിക്കുന്ന വില എന്നിവ മാറി കൊണ്ടിരിക്കും 
+controlled components  വഴി ഓരോ സ്റ്റേറ്റ് മ്യൂറ്റേഷനും അതുമായി ബന്ധപ്പെട്ട  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന് ഉണ്ടാകും .യൂസർ ഇന്പുട് ചെയ്യുമ്പോൾ തന്നെ വാലിഡേറ്റ് ചെയ്യാനും മോഡിഫൈ  ചെയ്യാനും സാധിക്കും.
+ഉദ്ദാഹരണത്തിനു  പേരുകൾ വലിയ അക്ഷരത്തിൽ തന്നെ വേണമെങ്കിൽ `handleChange ` ഫങ്ക്ഷന് താഴെ തന്ന പോലെ എഴുതിയാൽ മതിയാകും 
 ```javascript{2}
 handleChange(event) {
   this.setState({value: event.target.value.toUpperCase()});
