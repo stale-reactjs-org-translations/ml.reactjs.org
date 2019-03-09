@@ -1,5 +1,4 @@
 ---
-title: Component-Based
 title: കമ്പോണന്റ് ബേസ്‍‍ഡ്
 order: 1
 ---
