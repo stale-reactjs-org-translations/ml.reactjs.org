@@ -179,7 +179,8 @@ class FlavorForm extends React.Component {
 `<input type="text">`, `<textarea>`,`<select>` എന്നിവ  ഒരേപോലെ പ്രവർത്തിക്കുന്നു അതായത് `value` ആട്രിബ്യുട്ട സ്വീകരിക്കുന്നു .അതുപയോഗിച്ചു controlled components നിര്മിക്കാവുന്നതാണ് .
 > Note
 >
-> You can pass an array into the `value` attribute, allowing you to select multiple options in a `select` tag:
+> 
+`value` ആട്രിബ്യുട്ടിലേക്ക്  അറേ പാസ് ചെയ്താൽ സെലെക്ടിൽ  ഒന്നിൽ കൂടുതൽ ഓപ്ഷനുകൾ  തിരഞ്ഞെടുക്കാൻ സാധിക്കും `select` 
 >
 >```js
 ><select multiple={true} value={['B', 'C']}>
@@ -187,19 +188,17 @@ class FlavorForm extends React.Component {
 
 ## The file input Tag {#the-file-input-tag}
 
-In HTML, an `<input type="file">` lets the user choose one or more files from their device storage to be uploaded to a server or manipulated by JavaScript via the [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications).
-
+എച് ടി എം എല്ലിൽ  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications).ഉപയോഗിച്ച്  ഒന്നോ അനധിലധികമോ ഫയലുകൾ ജാവാസ്ക്രിപ്റ്റ് വഴി സെർവറിലേക്  അപ്‌ലോഡ് ചെയ്യാൻ  `<input type="file">` ടാജ് വഴി സാധിക്കുന്നു
 ```html
 <input type="file" />
 ```
 
-Because its value is read-only, it is an **uncontrolled** component in React. It is discussed together with other uncontrolled components [later in the documentation](/docs/uncontrolled-components.html#the-file-input-tag).
-
+ഇതിന്റെ വില വായിക്കാൻ മാത്രം സാധിക്കുന്നതായത് കൊണ്ട്  ഇത് React ൽ ഇതൊരു **uncontrolled** component ആണ് . [ഈ ഡോക്യൂമെന്റിൽ  പിന്നീട് ](/docs/uncontrolled-components.html#the-file-input-tag)
 ## Handling Multiple Inputs {#handling-multiple-inputs}
 
-When you need to handle multiple controlled `input` elements, you can add a `name` attribute to each element and let the handler function choose what to do based on the value of `event.target.name`.
+നിങ്ങൾക് ഒന്നിൽ കൂടുതൽ  കോൺട്രോൾഡ് `input` എലെമെന്റ്സ് കൈകാര്യം ചെയ്യണ്ടി വരുമ്പോ ഓരോ എലെമെന്റിനും  `name`ആട്രിബ്യുട്ട് കൊടുക്കുകയാണെങ്കിൽ  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന്  `event.target.name` ന്റെ വില സാനുസരിച് എന്ത്  ചെയ്യണമെന്ന് തീരുമാനിക്കാവുന്നതാണ് .
 
-For example:
+ഉദാഹരണത്തിന്
 
 ```javascript{15,18,28,37}
 class Reservation extends React.Component {
@@ -251,15 +250,14 @@ class Reservation extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/wgedvV?editors=0010)
 
-Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
-
+ഇൻപുട്ട് അനുസരിച്ച്  കീ നെയിം മാറ്റാൻ ഇ എസ് 6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)  സിന്റാക്സ് ഉപയോഗിച്ചത് ശ്രദ്ധിക്കുക 
 ```js{2}
 this.setState({
   [name]: value
 });
 ```
 
-It is equivalent to this ES5 code:
+ഇത് ഇ എസ  5 ലെ താഴെ തന്ന കോഡ് നു സമാനം ആണ് :
 
 ```js{2}
 var partialState = {};
@@ -267,13 +265,12 @@ partialState[name] = value;
 this.setState(partialState);
 ```
 
-Also, since `setState()` automatically [merges a partial state into the current state](/docs/state-and-lifecycle.html#state-updates-are-merged), we only needed to call it with the changed parts.
-
+ `setState()` സ്വയം [പാർഷ്യൽ  സ്റ്റേറ്റ് നെ ഇപ്പോളത്തെ സ്റ്റേറ്റ് ആക്കുന്നത് കൊണ്ട് ](/docs/state-and-lifecycle.html#state-updates-are-merged),നമ്മൾ മാറ്റമുള്ള സ്ഥലങ്ങളിൽ മാത്രം ഇതിനെ വിളിച്ചാൽ മതിയാകും 
 ## Controlled Input Null Value {#controlled-input-null-value}
 
-Specifying the value prop on a [controlled component](/docs/forms.html#controlled-components) prevents the user from changing the input unless you desire so. If you've specified a `value` but the input is still editable, you may have accidentally set `value` to `undefined` or `null`.
+[controlled component](/docs/forms.html#controlled-components) ന്റെ പ്രോപ് വാല്യൂ പറഞ്ഞു കൊടുത്തിരിക്കുന്നത് കൊണ്ട് യൂസർ ഇന്പുട്ട് അനാവശ്യമായി ,മാറുന്നത് തടയുന്നു .`value` പറഞ്ഞു കൊടുത്താൽ ഇന്പുട്ട്  എഡിറ്റബിൾ  ആയിരിക്കും .അത് അബദ്ധത്തിൽ  `undefined ` ഓ  `null `നോ ആകാനുള്ള സാധ്യത ഉണ്ട് .
 
-The following code demonstrates this. (The input is locked at first but becomes editable after a short delay.)
+താഴെ തന്നിരിക്കുന്ന കോഡ് ഇത് കാണിച്ച തരും  (ഇന്പുട്ട്  ആദ്യം എഡിറ്റബിൾ അല്ല , എന്നാൽ അൽപ്പം കഴിഞ്ഞു  എഡിറ്റബിൾ ആകും )
 
 ```javascript
 ReactDOM.render(<input value="hi" />, mountNode);
@@ -286,8 +283,8 @@ setTimeout(function() {
 
 ## Alternatives to Controlled Components {#alternatives-to-controlled-components}
 
-It can sometimes be tedious to use controlled components, because you need to write an event handler for every way your data can change and pipe all of the input state through a React component. This can become particularly annoying when you are converting a preexisting codebase to React, or integrating a React application with a non-React library. In these situations, you might want to check out [uncontrolled components](/docs/uncontrolled-components.html), an alternative technique for implementing input forms.
-
+ നിലവിൽ  ഉള്ള കോഡ് ബേസ്  React ലേക്ക് മാറ്റുകയോ ,React നു പുറത്തുള്ള ലൈബ്രററി ഇന്റഗ്രേറ്റ് ചെയ്യുമ്പോളോ , ഒക്കെ കോൺട്രോൾഡ് കോംപോണേന്റ്സ് ഉപയോഗിക്കുമ്പോൾ  എല്ലാ ഡാറ്റ  മാറ്റത്തിനും ഹാൻഡ്‌ലെർ ഫങ്ക്ഷന് എഴുതുന്നത് ഒഴിവാക്കാൻ 
+[uncontrolled components](/docs/uncontrolled-components.html),  ഉപയോഗിച്ച്  ഫോം നിര്മിക്കാവുന്നതാണ് 
 ## Fully-Fledged Solutions {#fully-fledged-solutions}
 
-If you're looking for a complete solution including validation, keeping track of the visited fields, and handling form submission, [Formik](https://jaredpalmer.com/formik) is one of the popular choices. However, it is built on the same principles of controlled components and managing state — so don't neglect to learn them.
+വാലിഡേഷൻ ,ഫോം സബ്മിഷന് മുതലായവക്ക്  , [Formik](https://jaredpalmer.com/formik)  ജനപ്രിയമായ  ഒരു സൊല്യൂഷൻ ആണ് ..പക്ഷെ ഇത് കോൺട്രോൾഡ്  കംപോണേന്റ്സ്  അടിസ്ഥാനം ആക്കിയാണ് ചെയ്തിരിക്കുന്നത് .അത് കൊണ്ട് അത് പഠിക്കാൻ മറക്കരുതേ 
