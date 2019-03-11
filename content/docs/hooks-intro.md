@@ -51,11 +51,11 @@ React Conference 2018 ൽ വച്ച് സോഫി അൽപ്പർട്�
 
 **class React ൽ നിന്നും ഒഴിവാകുകയല്ല.** ക്രമേണ എങ്ങനെ hooks ഉപയോഗിച്ചു തുടങ്ങാം എന്ന് [ചുവടെ](#gradual-adoption-strategy) ചേർക്കുന്നു.
 
-**Hooks നിങ്ങളുടെ React അറിവുകൾക്ക് പകരം വാക്കാണ് ആകുന്ന ഒന്നല്ല** Instead, Hooks provide a more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them.
+**Hooks നിങ്ങളുടെ React അറിവുകൾക്ക് പകരം വാക്കാണ് ആകുന്ന ഒന്നല്ല** നിങ്ങൾക്കു ഇതിനോടകം അറിയാവുന്ന React കൺസെപ്റ്സ് ഉപയോഗിക്കാൻ ഉള്ള ഒരു പുതിയ മാർഗം മാത്രം ആണ്: props, state, context, refs, and lifecycle. ഇവയെ സംയോജിപ്പിക്കാൻ ഉള്ള പുതിയ മാര്ഗങ്ങളും നമ്മൾ പിന്നീട് കാണും.
 
-**If you just want to start learning Hooks, feel free to [jump directly to the next page!](/docs/hooks-overview.html)** You can also keep reading this page to learn more about why we're adding Hooks, and how we're going to start using them without rewriting our applications.
+**നിങ്ങൾക്കു hooks പഠിക്കാൻ തിരക്കു ആയെങ്കിൽ [അടുത്ത പേജിലേക്ക്](/docs/hooks-overview.html) കടക്കാം.** ഞങ്ങൾ എന്ത് കൊണ്ട് ആണ് hooks അവതരിപ്പിക്കുന്നത് എന്നും, എങ്ങനെ അവ ഉപയോഗിക്കാൻ ആസൂത്രണം ചെയുന്നു എന്നും അറിയാൻ തുടർന്ന് ഈ പേജ് വായിക്കാം.
 
-## Motivation {#motivation}
+## പ്രചോദനം {#motivation}
 
 Hooks solve a wide variety of seemingly unconnected problems in React that we've encountered over five years of writing and maintaining tens of thousands of components. Whether you're learning React, use it daily, or even prefer a different library with a similar component model, you might recognize some of these problems.
 
@@ -85,13 +85,13 @@ Additionally, React has been out for about five years, and we want to make sure 
 
 To solve these problems, **Hooks let you use more of React's features without classes.** Conceptually, React components have always been closer to functions. Hooks embrace functions, but without sacrificing the practical spirit of React. Hooks provide access to imperative escape hatches and don't require you to learn complex functional or reactive programming techniques.
 
->Examples
+>ഉദാഹരണം:
 >
->[Hooks at a Glance](/docs/hooks-overview.html) is a good place to start learning Hooks.
+>[Hooks ഒറ്റനോട്ടത്തിൽ](/docs/hooks-overview.html) പഠിച്ചു തുടങ്ങാം.
 
-## Gradual Adoption Strategy {#gradual-adoption-strategy}
+## ക്രമേണ ഉപയോഗം തുടങ്ങാം {#gradual-adoption-strategy}
 
->**TLDR: There are no plans to remove classes from React.**
+>**TLDR: class React ൽ നിന്ന് ഒഴിവാകുന്നില്ല.**
 
 We know that React developers are focused on shipping products and don't have time to look into every new API that's being released. Hooks are very new, and it might be better to wait for more examples and tutorials before considering learning or adopting them.
 
