@@ -51,7 +51,7 @@ React Conference 2018 ൽ വച്ച് സോഫി അൽപ്പർട്�
 
 **class React ൽ നിന്നും ഒഴിവാകുകയല്ല.** ക്രമേണ എങ്ങനെ hooks ഉപയോഗിച്ചു തുടങ്ങാം എന്ന് [ചുവടെ](#gradual-adoption-strategy) ചേർക്കുന്നു.
 
-**Hooks don't replace your knowledge of React concepts.** Instead, Hooks provide a more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them.
+**Hooks നിങ്ങളുടെ React അറിവുകൾക്ക് പകരം വാക്കാണ് ആകുന്ന ഒന്നല്ല** Instead, Hooks provide a more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them.
 
 **If you just want to start learning Hooks, feel free to [jump directly to the next page!](/docs/hooks-overview.html)** You can also keep reading this page to learn more about why we're adding Hooks, and how we're going to start using them without rewriting our applications.
 
@@ -105,6 +105,6 @@ We intend for Hooks to cover all existing use cases for classes, but **we will k
 
 ഞങ്ങൾ hooks ഇനെ കുറിച്ച് ഉള്ള [പതിവ് ചോദ്യങ്ങളുടെ പട്ടിക](/docs/hooks-faq.html) തയാറാക്കിയിട്ടുണ്ട്.
 
-## Next Steps {#next-steps}
+## അടുത്ത ഘട്ടങ്ങൾ {#next-steps}
 
-By the end of this page, you should have a rough idea of what problems Hooks are solving, but many details are probably unclear. Don't worry! **Let's now go to [the next page](/docs/hooks-overview.html) where we start learning about Hooks by example.**
+ഈ പേജ് അവസാനിക്കുന്നതോടെ നിങ്ങൾക്കു എന്തൊക്കെ പ്രശ്നങ്ങൾ ആണ് hooks പരിഹരിക്കുന്നത് എന്നതിന്റെ ഒരു ഏകദേശ രൂപം കിട്ടി കാണും. ഇനി എങ്ങനെ നിങ്ങൾക്കു hooks ഉപയോഗിക്കാം എന്ന് [അടുത്ത പേജ്](/docs/hooks-overview.html) മുതൽ വായിക്കാം. അവിടെ നമ്മൾ ഉദാഹരണങ്ങളിലൂടെ hooks ഉപയോഗിക്കാൻ പഠിക്കും.
