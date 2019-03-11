@@ -1,11 +1,11 @@
 ---
 id: hooks-intro
-title: Introducing Hooks
+title: Hooks പരിചയപ്പെടുത്തുന്നു
 permalink: docs/hooks-intro.html
 next: hooks-overview.html
 ---
 
-*Hooks* are a new addition in React 16.8. They let you use state and other React features without writing a class.
+React 16.8 ലെ പുതിയതായി ചേർക്കപ്പെട്ട ഫീച്ചർ ആണ് *Hooks*. ഇത് ഉപയോഗിച്ച് നിങ്ങൾക്കു state ഉം മറ്റു ഫീച്ചർ class ഇല്ലാതെ ഉപയോഗിക്കാൻ ആകും.
 
 ```js{4,5}
 import React, { useState } from 'react';
@@ -25,31 +25,31 @@ function Example() {
 }
 ```
 
-This new function `useState` is the first "Hook" we'll learn about, but this example is just a teaser. Don't worry if it doesn't make sense yet!
+`useState` എന്ന ഈ ഫങ്ക്ഷന് ആണ് നമ്മൾ കാണുന്ന ആദ്യത്തെ Hook. നിങ്ങൾക്കു ഇപ്പോൾ ഈ ഉദാഹരണം മുഴുവൻ ആയി മനസിലാക്കണം എന്നില്ല! നമുക്കു അതിനായി വരുന്ന പേജുകളിൽ കൂടുതൽ പഠിക്കാം.
 
-**You can start learning Hooks [on the next page](/docs/hooks-overview.html).** On this page, we'll continue by explaining why we're adding Hooks to React and how they can help you write great applications.
+**[അടുത്ത പേജിൽ](/docs/hooks-overview.html) നിങ്ങൾക്കു Hooks പഠിച്ചു തുടങ്ങാം.** ഈ പേജിൽ എന്ത് കൊണ്ട് ആണ് Hooks ചേർക്കുന്നത് എന്നതിന്റെ വിശദീകരണവും, എങ്ങനെ അവ നല്ല അപ്പ്ലികേഷൻസ് എഴുതാൻ സഹായിക്കും എന്നും കാണാം.
 
->Note
+>കുറിപ്പ്
 >
->React 16.8.0 is the first release to support Hooks. When upgrading, don't forget to update all packages, including React DOM. React Native will support Hooks in the next stable release.
+>React 16.8.0 ൽ ആണ് hooks ലൈബ്രറിയിൽ ചേർക്കുന്നത്. നിങ്ങൾ hooks ഉപയോഗിക്കുമ്പോൾ React DOM ഉൾപ്പടെ അലാ ലൈബ്രറികളും അപ്ഗ്രേഡ് ചെയാൻ മറക്കരുത്. React Native അടുത്ത റിലീസ് മുതൽ hooks ഉൾപ്പെടുത്തും.
 
-## Video Introduction {#video-introduction}
+## ദൃശ്യം {#video-introduction}
 
-At React Conf 2018, Sophie Alpert and Dan Abramov introduced Hooks, followed by Ryan Florence demonstrating how to refactor an application to use them. Watch the video here:
+React Conference 2018 ൽ വച്ച് സോഫി അൽപ്പർട്ടും ഡാൻ അബ്രമോവും കൂടി ആണ് hooks ആദ്യം ആയി അവതരിപ്പിച്ചത്. പിന്നീട് റയാൻ ഫ്ലോറെൻസ് hooks ഉപയോഗിച്ച് ഒരു അപ്ലിക്കേഷൻ എഴുതി കാണിക്കുകയും ചെയ്തു. അതിന്റെ ദൃശ്യങ്ങൾ ചുവടെ ചേർക്കുന്നു.
 
 <br>
 
 <iframe width="650" height="366" src="//www.youtube.com/embed/dpw9EHDh2bM" frameborder="0" allowfullscreen></iframe>
 
-## No Breaking Changes {#no-breaking-changes}
+## ബ്രേക്കിംഗ് മാറ്റങ്ങൾ ഇല്ല {#no-breaking-changes}
 
-Before we continue, note that Hooks are:
+മുൻപോട്ടു പോകുന്നതിനു മുൻപ് അറിഞ്ഞിരിക്കേണ്ട കുറച്ചു കാര്യങ്ങൾ:
 
-* **Completely opt-in.** You can try Hooks in a few components without rewriting any existing code. But you don't have to learn or use Hooks right now if you don't want to.
-* **100% backwards-compatible.** Hooks don't contain any breaking changes.
-* **Available now.** Hooks are now available with the release of v16.8.0.
+* **Completely opt-in.** ഇപ്പോൾ നിങ്ങൾ എഴുതിയിട്ടുള്ള components ഒന്നും മാറ്റാതെ തന്നേ നിങ്ങൾക്കു Hooks ഉപയോഗിച്ചു കോഡ് ചെയ്തു തുടങ്ങാവുന്നത് ആണ്. ഇപ്പോൾ പഠിക്കേണ്ട എന്ന് തോന്നുന്നുണ്ടെങ്കിൽ വേണ്ട എന്ന് വക്കാം.
+* **100% backwards-compatible.**  ഇപ്പോൾ ഉള്ള code ഇനെ പൊട്ടിക്കുന്ന മാറ്റങ്ങൾ ഒന്നും hooks കൊണ്ട് വരുന്നില്ല.
+* **ഇപ്പോൾ ലഭ്യമാണ്** React 16.8.0 മുതൽ hooks ലഭ്യം ആണ്.
 
-**There are no plans to remove classes from React.** You can read more about the gradual adoption strategy for Hooks in the [bottom section](#gradual-adoption-strategy) of this page.
+**class React ൽ നിന്നും ഒഴിവാകുകയല്ല.** ക്രമേണ എങ്ങനെ hooks ഉപയോഗിച്ചു തുടങ്ങാം എന്ന് [ചുവടെ](#gradual-adoption-strategy) ചേർക്കുന്നു.
 
 **Hooks don't replace your knowledge of React concepts.** Instead, Hooks provide a more direct API to the React concepts you already know: props, state, context, refs, and lifecycle. As we will show later, Hooks also offer a new powerful way to combine them.
 
@@ -101,9 +101,9 @@ We also understand that the bar for adding a new primitive to React is extremely
 
 We intend for Hooks to cover all existing use cases for classes, but **we will keep supporting class components for the foreseeable future.** At Facebook, we have tens of thousands of components written as classes, and we have absolutely no plans to rewrite them. Instead, we are starting to use Hooks in the new code side by side with classes.
 
-## Frequently Asked Questions {#frequently-asked-questions}
+## പതിവ് ചോദ്യങ്ങൾ {#frequently-asked-questions}
 
-We've prepared a [Hooks FAQ page](/docs/hooks-faq.html) that answers the most common questions about Hooks.
+ഞങ്ങൾ hooks ഇനെ കുറിച്ച് ഉള്ള [പതിവ് ചോദ്യങ്ങളുടെ പട്ടിക](/docs/hooks-faq.html) തയാറാക്കിയിട്ടുണ്ട്.
 
 ## Next Steps {#next-steps}
 
