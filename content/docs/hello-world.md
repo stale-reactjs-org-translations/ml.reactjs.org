@@ -1,6 +1,6 @@
 ---
 id: hello-world
-title: ഹലോ വേൾഡ്
+title: ഹലോ, വേൾഡ്
 permalink: docs/hello-world.html
 prev: cdn-links.html
 next: introducing-jsx.html
@@ -35,7 +35,7 @@ ReactDOM.render(
 
 മുൻ അധ്യായങ്ങളിൽ അവതരിപ്പിച്ചിരിക്കുന്ന അറിവുകളെ അടിസ്ഥാനമാക്കി ആണ് ഈ പാഠഭാഗം നിർമിച്ചിരിക്കുന്നത്. **React ഇനെ കുറിച്ച് ഉള്ള ഭൂരിഭാഗം കാര്യങ്ങളും സൈഡ്ബാറിലെ "Main Concepts" ഇൽ ഉള്ള അധ്യായങ്ങൾ അതേ ക്രമത്തിൽ വായിച്ചാൽ മനസിലാക്കാം.** ഉദാഹരണത്തിന്, [“Introducing JSX”](/docs/introducing-jsx.html) ആണ് അടുത്ത അധ്യായം.
 
-## Knowledge Level Assumptions {#knowledge-level-assumptions}
+## മുൻപേ അറിയേണ്ട കാര്യങ്ങൾ {#knowledge-level-assumptions}
 
 React ഒരു JavaScript ലൈബ്രറി ആണ്, അതിനാൽ നമ്മൾ JavaScript ഭാഷയെ കുറിച്ചുള്ള അടിസ്ഥാന ധാരണയുള്ളതായി കരുതുന്നു. **നിങ്ങൾക്കു ആത്മവിശ്വാസം കുറവാണെങ്കിൽ ഈ ട്യൂട്ടോറിയൽ [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) ചെയ്തു നോക്കാവുന്നത് ആണ്**. അരമണിക്കൂർ തൊട്ടു ഒരു മണിക്കൂർ വരെ ദൈർക്യം ഉള്ള ഈ tutorial ചെയ്താൽ നിങ്ങൾക്കു React ഉം JavaScript ഉം ഒരുമിച്ചു പഠിക്കുന്നതിന്റെ കാഠിന്യം ഒഴിവാക്കാം.
 
