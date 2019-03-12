@@ -1,8 +1,8 @@
 ---
-title: Component-Based
+title: കമ്പോണന്റ് ബേസ്‍‍ഡ്
 order: 1
 ---
 
-Build encapsulated components that manage their own state, then compose them to make complex UIs.
+സ്വന്തം state കൈകാര്യം ചെയ്യുന്ന എന്‍ക്യാപ്സുലേറ്റട് കമ്പോണന്റ്കള്‍ നിർമ്മിക്കുക തുടർന്ന് അവ പുനരുപയോഗിച്ച് സങ്കീർണ്ണമായ UI കൾ നിർമ്മിക്കുക.
 
-Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+കമ്പോണന്റ് ലോജിക്  െടമ്പ്ലേറ്റിനു പകരം JavaScript-ല്‍ എഴുതുന്നതിനാല്‍ നിങ്ങള്‍ക്ക് ആയാസരഹിതമായി റിച്ച് ഡേറ്റ ആപ്ലിക്കേഷന്‍ വഴി പാസ് ചെയ്യുവാനും DOM-ല്‍ നിന്ന് state മാറ്റി നിര്‍ത്തുവാനും സാധിക്കും.  
