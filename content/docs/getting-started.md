@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: Getting Started
+title: ആമുഖം
 permalink: docs/getting-started.html
 next: add-react-to-a-website.html
 redirect_from:
@@ -14,18 +14,18 @@ redirect_from:
   - "docs/try-react.html"
   - "docs/tooling-integration.html"
   - "docs/package-management.html"
-  - "docs/language-tooling.html"
+  - "docs/language-tooling.html" 
   - "docs/environments.html"
 ---
 
-This page is an overview of the React documentation and related resources.
+ഈ പേജിന്റെ ഒരു ചുരുക്കവിവരണമാണ് React ഡോക്യുമെന്റേഷനുകളും അനുബന്ധ വിഭവങ്ങളും.
 
-**React** is a JavaScript library for building user interfaces. Learn what React is all about on [our homepage](/) or [in the tutorial](/tutorial/tutorial.html).
+**React** യൂസർ ഇൻറർഫേസുകൾ നിർമ്മിക്കുന്നതിനുള്ള ഒരു ജാവാസ്ക്രിപ്റ്റ് ഗ്രന്ഥശാലയാണ്. React എന്തിനു എന്തു പഠിക്കണം [our homepage](/) or [in the tutorial](/tutorial/tutorial.html).
 
 ---
 
-- [Try React](#try-react)
-- [Learn React](#learn-react)
+- [ശ്രമിക്കുക React](#try-react)
+- [അറിയുക React](#learn-react)
 - [Staying Informed](#staying-informed)
 - [Versioned Documentation](#versioned-documentation)
 - [Something Missing?](#something-missing)
