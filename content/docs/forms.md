@@ -9,7 +9,7 @@ redirect_from:
   - "docs/forms-zh-CN.html"
 ---
 
-HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
+React ൽ form എലമെന്റ് കളുടെ പ്രവർത്തനം ഇവക് ചില  internal state ഉള്ളതിനാൽ  മറ്റ് DOM എലെമെന്റ്കളിൽ നിന്ന് വ്യത്യസ്തമാണ് ..ഉദ്ദാഹരണമായി താഴെ തന്നിരിക്കുന്ന HTML ഇലെ ഫോം യൂസറിൽ  നിന്നും ഒരു പേര് സ്വീകരിക്കുന്നു .
 
 ```html
 <form>
@@ -21,15 +21,13 @@ HTML form elements work a little bit differently from other DOM elements in Reac
 </form>
 ```
 
-This form has the default HTML form behavior of browsing to a new page when the user submits the form. If you want this behavior in React, it just works. But in most cases, it's convenient to have a JavaScript function that handles the submission of the form and has access to the data that the user entered into the form. The standard way to achieve this is with a technique called "controlled components".
+ഈ ഫോം  നു സാധാരണ html  ഫോം ഒരു യൂസർ submit ചെയ്യുമ്പോ പുതിയ പേജ് ലോഡ്  ചെയ്യുന്ന ഡീഫോൾട് സ്വഭാവം ഉണ്ട് .React ലും നമുക് വേണമെങ്കിൽ ഈ സ്വഭാവം ഉപയോഗിക്കാം എങ്കിലും ഈ ഫോം സബ്മിഷൻ കൈകാര്യം ചെയ്യാനും യൂസർ എന്റർ ചെയ്ത വിവരങ്ങൾ അക്സസ്സ് ചെയ്യാനും ജാവാസ്ക്രിപ്റ്റ് ഫങ്ക്ഷന് എഴുതുന്നതാകും ഉത്തമം . ഇത് ചെയ്യാൻ സഹായിക്കുന്ന ഒരു ടെക്‌നിക്ക്  ആണ് "controlled  componenets "
 
 ## Controlled Components {#controlled-components}
 
-In HTML, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with [`setState()`](/docs/react-component.html#setstate).
+എച്  ടി  എം എല്ലിൽ  `<input>`, `<textarea>`,`<select>പോലുള്ള ഫോം എലെമെന്റുകൾ  അവരുടെ സ്വഭാവം യൂസർ നൽകുന്ന  ഇന്പുട് അനുസരിച്ചാണ് മാറ്റുന്നത് .എന്നാൽ റിയാക്റ്റിൽ  ഓരോ components ന്റെയും സ്വഭാവം സ്റ്റേറ്റ് പ്രോപ്പർട്ടിയിൽ സൂക്ഷിക്കുകയും  [`setState()`](/docs/react-component.html#setstate) എന്നിവ തിനനുസരിച്ച് മാത്രം മാറുകയും ചെയ്യുന്നു 
 
-We can combine the two by making the React state be the "single source of truth". Then the React component that renders a form also controls what happens in that form on subsequent user input. An input form element whose value is controlled by React in this way is called a "controlled component".
-
-For example, if we want to make the previous example log the name when it is submitted, we can write the form as a controlled component:
+ഉദ്ദാഹരണത്തിനു ,നമുക്ക്  മുൻപ് കണ്ട പേര് submit  ചെയ്യുന്ന ഉദാഹരണത്തിൽ പേര് ലോഗ് ചെയ്യണമെങ്കിൽ ഫോം നെ controlled component  ആയി എഴുതാം 
 
 ```javascript{4,10-12,24}
 class NameForm extends React.Component {
@@ -66,10 +64,9 @@ class NameForm extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/VmmPgp?editors=0010)
 
-Since the `value` attribute is set on our form element, the displayed value will always be `this.state.value`, making the React state the source of truth. Since `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
-
-With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input. For example, if we wanted to enforce that names are written with all uppercase letters, we could write `handleChange` as:
-
+`value ` atribute സെറ്റ് ചെയ്തിരിക്കുന്നതിനാൽ കാണിക്കുന്ന വാല്യൂ എപ്പോളും `this.state.value` ആയിരിക്കും . handleChange `ഓരോ തവണ കീ അമർത്തുമ്പോഴും റൺ ചെയ്യുന്നതിനാൽ react സ്റ്റേറ്റ് ,കാണിക്കുന്ന വില എന്നിവ മാറി കൊണ്ടിരിക്കും 
+controlled components  വഴി ഓരോ സ്റ്റേറ്റ് മ്യൂറ്റേഷനും അതുമായി ബന്ധപ്പെട്ട  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന് ഉണ്ടാകും .യൂസർ ഇന്പുട് ചെയ്യുമ്പോൾ തന്നെ വാലിഡേറ്റ് ചെയ്യാനും മോഡിഫൈ  ചെയ്യാനും സാധിക്കും.
+ഉദ്ദാഹരണത്തിനു  പേരുകൾ വലിയ അക്ഷരത്തിൽ തന്നെ വേണമെങ്കിൽ `handleChange ` ഫങ്ക്ഷന് താഴെ തന്ന പോലെ എഴുതിയാൽ മതിയാകും 
 ```javascript{2}
 handleChange(event) {
   this.setState({value: event.target.value.toUpperCase()});
@@ -78,7 +75,7 @@ handleChange(event) {
 
 ## The textarea Tag {#the-textarea-tag}
 
-In HTML, a `<textarea>` element defines its text by its children:
+എച് ടി  എം എല്ലിൽ  ടെക്സ്റ്റ് ഏരിയയുടെ നിർവചനം അതിന്റെ ഓപ്പണിങ് -ക്ലോസിങ് ടാഗുകളുടെ ഇടയിലാണ്  
 
 ```html
 <textarea>
@@ -86,8 +83,7 @@ In HTML, a `<textarea>` element defines its text by its children:
 </textarea>
 ```
 
-In React, a `<textarea>` uses a `value` attribute instead. This way, a form using a `<textarea>` can be written very similarly to a form that uses a single-line input:
-
+React ൽ അതിനു പകരം `<textarea>` വാല്യൂ ആട്രിബ്യുട്ട ആണ് ഉപയോഗിക്കുന്നത് .ഒറ്റവരി ഇൻപുട്ട് സ്വീകരിക്കുന്ന ഫോം പോലെ തന്നെ നമുക്ക് `<textarea>` വെച്ചുള്ള  ഫോം നിര്മിക്കാവുന്നതാണ്  
 ```javascript{4-6,12-14,26}
 class EssayForm extends React.Component {
   constructor(props) {
@@ -123,11 +119,11 @@ class EssayForm extends React.Component {
 }
 ```
 
-Notice that `this.state.value` is initialized in the constructor, so that the text area starts off with some text in it.
+`this.state.value`ഒരു കൺസ്ട്രക്ടർ വെച്ച് ഇനിഷ്യലൈസ് ചെയ്തത് കൊണ്ടാണ് ടെക്സ്റ്റ് ഏരിയ ആദ്യമേ തന്നെ ചില ടെക്സ്റ്റ് കാണിക്കുന്നത് 
 
 ## The select Tag {#the-select-tag}
 
-In HTML, `<select>` creates a drop-down list. For example, this HTML creates a drop-down list of flavors:
+എച്ച് ടി എം എല്ലിൽ  `<select>` ഉപയോഗിച്ചാണ് ഡ്രോപ് ഡൗൺ ലിസ്റ്റ് ഉണ്ടാക്കുന്നത് .ഉദ്ദാഹരണത്തിനു ഈ ഫ്‌ളേവറുകളുടെ ഡ്രോപ്പ് ഡൗൺ ലിസ്റ്റ്  നോക്കുക 
 
 ```html
 <select>
@@ -138,7 +134,7 @@ In HTML, `<select>` creates a drop-down list. For example, this HTML creates a d
 </select>
 ```
 
-Note that the Coconut option is initially selected, because of the `selected` attribute. React, instead of using this `selected` attribute, uses a `value` attribute on the root `select` tag. This is more convenient in a controlled component because you only need to update it in one place. For example:
+Coconut ഓപ്ഷൻ സെലെക്ടഡ് ആയിരിക്കുന്നത് `selected` ആട്രിബ്യുട്ട  കാരണം ആണെന്ന് ശ്രദ്ധിക്കുക .ഇതിനു പകരം React ൽ  സെലക്ട് ന്റെ  റൂട്ടിൽ ഒരു `value` ആട്രിബ്യുട്ട് ഉപയോഗിക്കുകയാണ് ചെയ്യുക .ഒരിടത്ത്  മാത്രം മാറ്റം വരുത്തിയാൽ മതി എന്നത് കൊണ്ട് controlled component ഉപയോഗിക്കുന്നത് ഉപകാരപ്രദമായിരിക്കും .ഉദ്ദാഹരണം 
 
 ```javascript{4,10-12,24}
 class FlavorForm extends React.Component {
@@ -178,10 +174,9 @@ class FlavorForm extends React.Component {
 }
 ```
 
-[**Try it on CodePen**](https://codepen.io/gaearon/pen/JbbEzX?editors=0010)
+[**Codepen ൽ ശ്രമിക്കുക **](https://codepen.io/gaearon/pen/JbbEzX?editors=0010)
 
-Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select>` all work very similarly - they all accept a `value` attribute that you can use to implement a controlled component.
-
+`<input type="text">`, `<textarea>`,`<select>` എന്നിവ  ഒരേപോലെ പ്രവർത്തിക്കുന്നു അതായത് `value` ആട്രിബ്യുട്ട സ്വീകരിക്കുന്നു .അതുപയോഗിച്ചു controlled components നിര്മിക്കാവുന്നതാണ് .
 > Note
 >
 > You can pass an array into the `value` attribute, allowing you to select multiple options in a `select` tag:
@@ -190,19 +185,19 @@ Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select
 ><select multiple={true} value={['B', 'C']}>
 >```
 
-## The file input Tag {#the-file-input-tag}
+## ഫയൽ ഇന്പുട്ട് ടാഗ്  {#the-file-input-tag}
 
-In HTML, an `<input type="file">` lets the user choose one or more files from their device storage to be uploaded to a server or manipulated by JavaScript via the [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications).
+HTML- ൽ,  <input input = "file"> ഉപയോഗിച്ച്  സെർവറിലേക്ക് അപ്ലോഡുചെയ്യാനോ അല്ലെങ്കിൽ JavaScript വഴി കൈകാര്യം ചെയ്യാനോ അവരുടെ കമ്പ്യൂട്ടർ സ്റ്റോറേജിൽ  നിന്ന് ഒന്നോ അതിലധികമോ ഫയലുകൾ തിരഞ്ഞെടുക്കാനും  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) സഹായിക്കും .
 
 ```html
 <input type="file" />
 ```
 
-Because its value is read-only, it is an **uncontrolled** component in React. It is discussed together with other uncontrolled components [later in the documentation](/docs/uncontrolled-components.html#the-file-input-tag).
+ഇതിന്റെ വാല്യൂ  റീഡ് ഒൺലി ആയതു കൊണ്ട് ഇത് React ലെ **uncontrolled ** കോംപോണേന്റ്  ആണ് . [താഴെ ഇതിനെ കുറിച്ച കൂടുതൽ കാണാം n](/docs/uncontrolled-components.html#the-file-input-tag).
 
-## Handling Multiple Inputs {#handling-multiple-inputs}
+## ഒന്നിലധികം ഇൻപുട്ടുകളെ കൈകാര്യം  ചെയ്യുവാൻ  {#handling-multiple-inputs}
 
-When you need to handle multiple controlled `input` elements, you can add a `name` attribute to each element and let the handler function choose what to do based on the value of `event.target.name`.
+ഒന്നിലധികം കോൺട്രോൾഡ് `input`  ഘടകങ്ങൾ കൈകാര്യം ചെയ്യണമെങ്കിൽ, ഓരോ ഘടകത്തിലേയും` name  'ആട്രിബ്യൂട്ട് ചേർക്കാനും  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന് `event.target.name` ന്റെ വാല്യൂ  അടിസ്ഥാനമാക്കി എന്തുചെയ്യണമെന്ന് തിരഞ്ഞെടുക്കാനും കഴിയും.  `event.target.name`.
 
 For example:
 
@@ -256,7 +251,8 @@ class Reservation extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/wgedvV?editors=0010)
 
-Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
+ഇപ്പൊ നമ്മൾ ES6 ഉപയോഗിച്ച്  [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) 
+ഒരു ഇൻപുട്ടിന്റെ സ്റ്റേറ്റ് മാറ്റുന്ന സിന്റാക്സ് ആണ് കണ്ടത് :
 
 ```js{2}
 this.setState({
@@ -264,7 +260,7 @@ this.setState({
 });
 ```
 
-It is equivalent to this ES5 code:
+ഇതിന്റെ സമാനമായ  ES5 കോഡ് :
 
 ```js{2}
 var partialState = {};
