@@ -9,7 +9,7 @@ redirect_from:
   - "docs/forms-zh-CN.html"
 ---
 
-React ഇൽ form എലമെന്റ് കളുടെ പ്രവർത്തനം ഇവക് ചില  internal state ഉള്ളതിനാൽ  മറ്റ് DOM എലെമെന്റ്കളിൽ നിന്ന് വ്യത്യസ്തമാണ് ..ഉദ്ദാഹരണമായി താഴെ തന്നിരിക്കുന്ന HTML ഇലെ ഫോം യൂസറിൽ  നിന്നും ഒരു പേര് സ്വീകരിക്കുന്നു .
+React ൽ form എലമെന്റ് കളുടെ പ്രവർത്തനം ഇവക് ചില  internal state ഉള്ളതിനാൽ  മറ്റ് DOM എലെമെന്റ്കളിൽ നിന്ന് വ്യത്യസ്തമാണ് ..ഉദ്ദാഹരണമായി താഴെ തന്നിരിക്കുന്ന HTML ഇലെ ഫോം യൂസറിൽ  നിന്നും ഒരു പേര് സ്വീകരിക്കുന്നു .
 
 ```html
 <form>
@@ -185,19 +185,19 @@ class FlavorForm extends React.Component {
 ><select multiple={true} value={['B', 'C']}>
 >```
 
-## The file input Tag {#the-file-input-tag}
+## ഫയൽ ഇന്പുട്ട് ടാഗ്  {#the-file-input-tag}
 
-In HTML, an `<input type="file">` lets the user choose one or more files from their device storage to be uploaded to a server or manipulated by JavaScript via the [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications).
+HTML- ൽ,  <input input = "file"> ഉപയോഗിച്ച്  സെർവറിലേക്ക് അപ്ലോഡുചെയ്യാനോ അല്ലെങ്കിൽ JavaScript വഴി കൈകാര്യം ചെയ്യാനോ അവരുടെ കമ്പ്യൂട്ടർ സ്റ്റോറേജിൽ  നിന്ന് ഒന്നോ അതിലധികമോ ഫയലുകൾ തിരഞ്ഞെടുക്കാനും  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) സഹായിക്കും .
 
 ```html
 <input type="file" />
 ```
 
-Because its value is read-only, it is an **uncontrolled** component in React. It is discussed together with other uncontrolled components [later in the documentation](/docs/uncontrolled-components.html#the-file-input-tag).
+ഇതിന്റെ വാല്യൂ  റീഡ് ഒൺലി ആയതു കൊണ്ട് ഇത് React ലെ **uncontrolled ** കോംപോണേന്റ്  ആണ് . [താഴെ ഇതിനെ കുറിച്ച കൂടുതൽ കാണാം n](/docs/uncontrolled-components.html#the-file-input-tag).
 
-## Handling Multiple Inputs {#handling-multiple-inputs}
+## ഒന്നിലധികം ഇൻപുട്ടുകളെ കൈകാര്യം  ചെയ്യുവാൻ  {#handling-multiple-inputs}
 
-When you need to handle multiple controlled `input` elements, you can add a `name` attribute to each element and let the handler function choose what to do based on the value of `event.target.name`.
+ഒന്നിലധികം കോൺട്രോൾഡ് `input`  ഘടകങ്ങൾ കൈകാര്യം ചെയ്യണമെങ്കിൽ, ഓരോ ഘടകത്തിലേയും` name  'ആട്രിബ്യൂട്ട് ചേർക്കാനും  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന് `event.target.name` ന്റെ വാല്യൂ  അടിസ്ഥാനമാക്കി എന്തുചെയ്യണമെന്ന് തിരഞ്ഞെടുക്കാനും കഴിയും.  `event.target.name`.
 
 For example:
 
