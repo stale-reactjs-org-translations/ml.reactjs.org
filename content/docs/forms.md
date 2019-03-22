@@ -193,7 +193,7 @@ HTML- ൽ,  <input input = "file"> ഉപയോഗിച്ച്  സെർവ�
 <input type="file" />
 ```
 
-ഇതിന്റെ വാല്യൂ  റീഡ് ഒൺലി ആയതു കൊണ്ട് ഇത് React ലെ **uncontrolled ** കോംപോണേന്റ്  ആണ് . [താഴെ ഇതിനെ കുറിച്ച കൂടുതൽ കാണാം n](/docs/uncontrolled-components.html#the-file-input-tag).
+ഇതിന്റെ വാല്യൂ  റീഡ് ഒൺലി ആയതു കൊണ്ട് ഇത് React ലെ **uncontrolled ** കോംപോണേന്റ്  ആണ് . [താഴെ ഇതിനെ കുറിച്ച കൂടുതൽ കാണാം ](/docs/uncontrolled-components.html#the-file-input-tag).
 
 ## ഒന്നിലധികം ഇൻപുട്ടുകളെ കൈകാര്യം  ചെയ്യുവാൻ  {#handling-multiple-inputs}
 
@@ -251,7 +251,7 @@ class Reservation extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/wgedvV?editors=0010)
 
-Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
+ES6  [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) സിന്റാക്സ് ഉപയോഗിച്ച്  നൽകിയ ഇൻപുട്ടിന്റെ സ്റ്റേറ്റ്  കീയുടെ വാല്യൂ മാറിയത് എങ്ങനെ ആണെന്ന്  കണ്ടല്ലോ 
 
 ```js{2}
 this.setState({
@@ -259,7 +259,7 @@ this.setState({
 });
 ```
 
-It is equivalent to this ES5 code:
+ഇത് താഴെ തന്നിരിക്കുന്ന ES5  കോഡിന് തുല്യമാണ്  
 
 ```js{2}
 var partialState = {};
@@ -267,7 +267,7 @@ partialState[name] = value;
 this.setState(partialState);
 ```
 
-Also, since `setState()` automatically [merges a partial state into the current state](/docs/state-and-lifecycle.html#state-updates-are-merged), we only needed to call it with the changed parts.
+`setState()` ഓട്ടോമാറ്റിക്കായിട്ട് [പാർഷ്യൽ സ്റ്റേറ്റിനെ കറന്റ് സ്റ്റേറ്റ് ആയിട്ട് മെർജ് ചെയ്യുന്നതിനാൽ   ](/docs/state-and-lifecycle.html#state-updates-are-merged) നമ്മൾ ഇവയെ മാറ്റമുള്ള ഭാഗങ്ങളുടെ കൂടെ മാത്രം വിളിച്ചാൽ മതിയാകും .
 
 ## Controlled Input Null Value {#controlled-input-null-value}
 
