@@ -9,7 +9,7 @@ redirect_from:
   - "docs/forms-zh-CN.html"
 ---
 
-React ഇൽ form എലമെന്റ് കളുടെ പ്രവർത്തനം ഇവക് ചില  internal state ഉള്ളതിനാൽ  മറ്റ് DOM എലെമെന്റ്കളിൽ നിന്ന് വ്യത്യസ്തമാണ് ..ഉദ്ദാഹരണമായി താഴെ തന്നിരിക്കുന്ന HTML ഇലെ ഫോം യൂസറിൽ  നിന്നും ഒരു പേര് സ്വീകരിക്കുന്നു .
+React ൽ form എലമെന്റ് കളുടെ പ്രവർത്തനം ഇവക് ചില  internal state ഉള്ളതിനാൽ  മറ്റ് DOM എലെമെന്റ്കളിൽ നിന്ന് വ്യത്യസ്തമാണ് ..ഉദ്ദാഹരണമായി താഴെ തന്നിരിക്കുന്ന HTML ഇലെ ഫോം യൂസറിൽ  നിന്നും ഒരു പേര് സ്വീകരിക്കുന്നു .
 
 ```html
 <form>
@@ -21,7 +21,7 @@ React ഇൽ form എലമെന്റ് കളുടെ പ്രവർത്
 </form>
 ```
 
-ഈ ഫോം  നു സാധാരണ html  ഫോം ഒരു യൂസർ submit ചെയ്യുമ്പോ പുതിയ പേജ് ലോഡ്  ചെയ്യുന്ന ഡീഫോൾട് സ്വഭാവം ഉണ്ട് .react ഇലും നമുക് വേണമെങ്കിൽ ഈ സ്വഭാവം ഉപയോഗിക്കാം എങ്കിലും ഈ ഫോം സബ്മിഷൻ കൈകാര്യം ചെയ്യാനും യൂസർ എന്റർ ചെയ്ത വിവരങ്ങൾ അക്സസ്സ് ചെയ്യാനും ജാവാസ്ക്രിപ്റ്റ് ഫങ്ക്ഷന് എഴുതുന്നതാകും ഉത്തമം . ഇത് ചെയ്യാൻ സഹായിക്കുന്ന ഒരു ടെക്‌നിക്ക്  ആണ് "controlled  componenets "
+ഈ ഫോം  നു സാധാരണ html  ഫോം ഒരു യൂസർ submit ചെയ്യുമ്പോ പുതിയ പേജ് ലോഡ്  ചെയ്യുന്ന ഡീഫോൾട് സ്വഭാവം ഉണ്ട് .React ലും നമുക് വേണമെങ്കിൽ ഈ സ്വഭാവം ഉപയോഗിക്കാം എങ്കിലും ഈ ഫോം സബ്മിഷൻ കൈകാര്യം ചെയ്യാനും യൂസർ എന്റർ ചെയ്ത വിവരങ്ങൾ അക്സസ്സ് ചെയ്യാനും ജാവാസ്ക്രിപ്റ്റ് ഫങ്ക്ഷന് എഴുതുന്നതാകും ഉത്തമം . ഇത് ചെയ്യാൻ സഹായിക്കുന്ന ഒരു ടെക്‌നിക്ക്  ആണ് "controlled  componenets "
 
 ## Controlled Components {#controlled-components}
 
@@ -134,7 +134,7 @@ class EssayForm extends React.Component {
 </select>
 ```
 
-Coconut ഓപ്ഷൻ സെലെക്ടഡ് ആയിരിക്കുന്നത് `selected` ആട്രിബ്യുട്ട  കാരണം ആണെന്ന് ശ്രദ്ധിക്കുക .ഇതിനു പകരം react ൽ  സെലക്ട് ന്റെ  റൂട്ടിൽ ഒരു `value` ആട്രിബ്യുട്ട് ഉപയോഗിക്കുകയാണ് ചെയ്യുക .ഒരിടത്ത്  മാത്രം മാറ്റം വരുത്തിയാൽ മതി എന്നത് കൊണ്ട് controlled component ഉപയോഗിക്കുന്നത് ഉപകാരപ്രദമായിരിക്കും .ഉദ്ദാഹരണം 
+Coconut ഓപ്ഷൻ സെലെക്ടഡ് ആയിരിക്കുന്നത് `selected` ആട്രിബ്യുട്ട  കാരണം ആണെന്ന് ശ്രദ്ധിക്കുക .ഇതിനു പകരം React ൽ  സെലക്ട് ന്റെ  റൂട്ടിൽ ഒരു `value` ആട്രിബ്യുട്ട് ഉപയോഗിക്കുകയാണ് ചെയ്യുക .ഒരിടത്ത്  മാത്രം മാറ്റം വരുത്തിയാൽ മതി എന്നത് കൊണ്ട് controlled component ഉപയോഗിക്കുന്നത് ഉപകാരപ്രദമായിരിക്കും .ഉദ്ദാഹരണം 
 
 ```javascript{4,10-12,24}
 class FlavorForm extends React.Component {
@@ -179,26 +179,27 @@ class FlavorForm extends React.Component {
 `<input type="text">`, `<textarea>`,`<select>` എന്നിവ  ഒരേപോലെ പ്രവർത്തിക്കുന്നു അതായത് `value` ആട്രിബ്യുട്ട സ്വീകരിക്കുന്നു .അതുപയോഗിച്ചു controlled components നിര്മിക്കാവുന്നതാണ് .
 > Note
 >
-> 
-`value` ആട്രിബ്യുട്ടിലേക്ക്  അറേ പാസ് ചെയ്താൽ സെലെക്ടിൽ  ഒന്നിൽ കൂടുതൽ ഓപ്ഷനുകൾ  തിരഞ്ഞെടുക്കാൻ സാധിക്കും `select` 
+> You can pass an array into the `value` attribute, allowing you to select multiple options in a `select` tag:
 >
 >```js
 ><select multiple={true} value={['B', 'C']}>
 >```
 
-## The file input Tag {#the-file-input-tag}
+## ഫയൽ ഇന്പുട്ട് ടാഗ്  {#the-file-input-tag}
 
-എച് ടി എം എല്ലിൽ  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications).ഉപയോഗിച്ച്  ഒന്നോ അനധിലധികമോ ഫയലുകൾ ജാവാസ്ക്രിപ്റ്റ് വഴി സെർവറിലേക്  അപ്‌ലോഡ് ചെയ്യാൻ  `<input type="file">` ടാജ് വഴി സാധിക്കുന്നു
+HTML- ൽ,  <input input = "file"> ഉപയോഗിച്ച്  സെർവറിലേക്ക് അപ്ലോഡുചെയ്യാനോ അല്ലെങ്കിൽ JavaScript വഴി കൈകാര്യം ചെയ്യാനോ അവരുടെ കമ്പ്യൂട്ടർ സ്റ്റോറേജിൽ  നിന്ന് ഒന്നോ അതിലധികമോ ഫയലുകൾ തിരഞ്ഞെടുക്കാനും  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) സഹായിക്കും .
+
 ```html
 <input type="file" />
 ```
 
-ഇതിന്റെ വില വായിക്കാൻ മാത്രം സാധിക്കുന്നതായത് കൊണ്ട്  ഇത് React ൽ ഇതൊരു **uncontrolled** component ആണ് . [ഈ ഡോക്യൂമെന്റിൽ  പിന്നീട് ](/docs/uncontrolled-components.html#the-file-input-tag)
-## Handling Multiple Inputs {#handling-multiple-inputs}
+ഇതിന്റെ വാല്യൂ  റീഡ് ഒൺലി ആയതു കൊണ്ട് ഇത് React ലെ **uncontrolled ** കോംപോണേന്റ്  ആണ് . [താഴെ ഇതിനെ കുറിച്ച കൂടുതൽ കാണാം n](/docs/uncontrolled-components.html#the-file-input-tag).
 
-നിങ്ങൾക് ഒന്നിൽ കൂടുതൽ  കോൺട്രോൾഡ് `input` എലെമെന്റ്സ് കൈകാര്യം ചെയ്യണ്ടി വരുമ്പോ ഓരോ എലെമെന്റിനും  `name`ആട്രിബ്യുട്ട് കൊടുക്കുകയാണെങ്കിൽ  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന്  `event.target.name` ന്റെ വില സാനുസരിച് എന്ത്  ചെയ്യണമെന്ന് തീരുമാനിക്കാവുന്നതാണ് .
+## ഒന്നിലധികം ഇൻപുട്ടുകളെ കൈകാര്യം  ചെയ്യുവാൻ  {#handling-multiple-inputs}
 
-ഉദാഹരണത്തിന്
+ഒന്നിലധികം കോൺട്രോൾഡ് `input`  ഘടകങ്ങൾ കൈകാര്യം ചെയ്യണമെങ്കിൽ, ഓരോ ഘടകത്തിലേയും` name  'ആട്രിബ്യൂട്ട് ചേർക്കാനും  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന് `event.target.name` ന്റെ വാല്യൂ  അടിസ്ഥാനമാക്കി എന്തുചെയ്യണമെന്ന് തിരഞ്ഞെടുക്കാനും കഴിയും.  `event.target.name`.
+
+For example:
 
 ```javascript{15,18,28,37}
 class Reservation extends React.Component {
@@ -250,14 +251,15 @@ class Reservation extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/wgedvV?editors=0010)
 
-ഇൻപുട്ട് അനുസരിച്ച്  കീ നെയിം മാറ്റാൻ ഇ എസ് 6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names)  സിന്റാക്സ് ഉപയോഗിച്ചത് ശ്രദ്ധിക്കുക 
+Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
+
 ```js{2}
 this.setState({
   [name]: value
 });
 ```
 
-ഇത് ഇ എസ  5 ലെ താഴെ തന്ന കോഡ് നു സമാനം ആണ് :
+It is equivalent to this ES5 code:
 
 ```js{2}
 var partialState = {};
@@ -265,12 +267,13 @@ partialState[name] = value;
 this.setState(partialState);
 ```
 
- `setState()` സ്വയം [പാർഷ്യൽ  സ്റ്റേറ്റ് നെ ഇപ്പോളത്തെ സ്റ്റേറ്റ് ആക്കുന്നത് കൊണ്ട് ](/docs/state-and-lifecycle.html#state-updates-are-merged),നമ്മൾ മാറ്റമുള്ള സ്ഥലങ്ങളിൽ മാത്രം ഇതിനെ വിളിച്ചാൽ മതിയാകും 
+Also, since `setState()` automatically [merges a partial state into the current state](/docs/state-and-lifecycle.html#state-updates-are-merged), we only needed to call it with the changed parts.
+
 ## Controlled Input Null Value {#controlled-input-null-value}
 
-[controlled component](/docs/forms.html#controlled-components) ന്റെ പ്രോപ് വാല്യൂ പറഞ്ഞു കൊടുത്തിരിക്കുന്നത് കൊണ്ട് യൂസർ ഇന്പുട്ട് അനാവശ്യമായി ,മാറുന്നത് തടയുന്നു .`value` പറഞ്ഞു കൊടുത്താൽ ഇന്പുട്ട്  എഡിറ്റബിൾ  ആയിരിക്കും .അത് അബദ്ധത്തിൽ  `undefined ` ഓ  `null `നോ ആകാനുള്ള സാധ്യത ഉണ്ട് .
+Specifying the value prop on a [controlled component](/docs/forms.html#controlled-components) prevents the user from changing the input unless you desire so. If you've specified a `value` but the input is still editable, you may have accidentally set `value` to `undefined` or `null`.
 
-താഴെ തന്നിരിക്കുന്ന കോഡ് ഇത് കാണിച്ച തരും  (ഇന്പുട്ട്  ആദ്യം എഡിറ്റബിൾ അല്ല , എന്നാൽ അൽപ്പം കഴിഞ്ഞു  എഡിറ്റബിൾ ആകും )
+The following code demonstrates this. (The input is locked at first but becomes editable after a short delay.)
 
 ```javascript
 ReactDOM.render(<input value="hi" />, mountNode);
@@ -283,8 +286,8 @@ setTimeout(function() {
 
 ## Alternatives to Controlled Components {#alternatives-to-controlled-components}
 
- നിലവിൽ  ഉള്ള കോഡ് ബേസ്  React ലേക്ക് മാറ്റുകയോ ,React നു പുറത്തുള്ള ലൈബ്രററി ഇന്റഗ്രേറ്റ് ചെയ്യുമ്പോളോ , ഒക്കെ കോൺട്രോൾഡ് കോംപോണേന്റ്സ് ഉപയോഗിക്കുമ്പോൾ  എല്ലാ ഡാറ്റ  മാറ്റത്തിനും ഹാൻഡ്‌ലെർ ഫങ്ക്ഷന് എഴുതുന്നത് ഒഴിവാക്കാൻ 
-[uncontrolled components](/docs/uncontrolled-components.html),  ഉപയോഗിച്ച്  ഫോം നിര്മിക്കാവുന്നതാണ് 
+It can sometimes be tedious to use controlled components, because you need to write an event handler for every way your data can change and pipe all of the input state through a React component. This can become particularly annoying when you are converting a preexisting codebase to React, or integrating a React application with a non-React library. In these situations, you might want to check out [uncontrolled components](/docs/uncontrolled-components.html), an alternative technique for implementing input forms.
+
 ## Fully-Fledged Solutions {#fully-fledged-solutions}
 
-വാലിഡേഷൻ ,ഫോം സബ്മിഷന് മുതലായവക്ക്  , [Formik](https://jaredpalmer.com/formik)  ജനപ്രിയമായ  ഒരു സൊല്യൂഷൻ ആണ് ..പക്ഷെ ഇത് കോൺട്രോൾഡ്  കംപോണേന്റ്സ്  അടിസ്ഥാനം ആക്കിയാണ് ചെയ്തിരിക്കുന്നത് .അത് കൊണ്ട് അത് പഠിക്കാൻ മറക്കരുതേ 
+If you're looking for a complete solution including validation, keeping track of the visited fields, and handling form submission, [Formik](https://jaredpalmer.com/formik) is one of the popular choices. However, it is built on the same principles of controlled components and managing state — so don't neglect to learn them.
