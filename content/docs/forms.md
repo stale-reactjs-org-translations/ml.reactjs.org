@@ -251,7 +251,8 @@ class Reservation extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/wgedvV?editors=0010)
 
-Note how we used the ES6 [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) syntax to update the state key corresponding to the given input name:
+ഇപ്പൊ നമ്മൾ ES6 ഉപയോഗിച്ച്  [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) 
+ഒരു ഇൻപുട്ടിന്റെ സ്റ്റേറ്റ് മാറ്റുന്ന സിന്റാക്സ് ആണ് കണ്ടത് :
 
 ```js{2}
 this.setState({
@@ -259,7 +260,7 @@ this.setState({
 });
 ```
 
-It is equivalent to this ES5 code:
+ഇതിന്റെ സമാനമായ  ES5 കോഡ് :
 
 ```js{2}
 var partialState = {};
