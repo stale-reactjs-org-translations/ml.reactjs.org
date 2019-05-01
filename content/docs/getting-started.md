@@ -25,22 +25,22 @@ redirect_from:
 ---
 
 - [ശ്രമിക്കുക React](#try-react)
-- [അറിയുക React](#learn-react)
-- [Staying Informed](#staying-informed)
-- [Versioned Documentation](#versioned-documentation)
-- [Something Missing?](#something-missing)
+- [React പടിക്കുക](#learn-react)
+- [അറിന്നു കൊണ്ട് ഇരിക്കുക](#staying-informed)
+- [Versioned ഡോക്യുമെന്റേഷൻ](#versioned-documentation)
+- [എന്തോ വിട്ട് പൊയൊ?](#something-missing)
 
-## Try React {#try-react}
+## ശ്രമിക്കുക React {#try-react}
 
 React has been designed from the start for gradual adoption, and **you can use as little or as much React as you need.** Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.
 
-### Online Playgrounds {#online-playgrounds}
+### ഓൺലൈന് േപ്ലയ്ഗറയണ്ട് {#online-playgrounds}
 
 If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), or [Glitch](https://glitch.com/edit/#!/remix/starter-react-template).
 
 If you prefer to use your own text editor, you can also [download this HTML file](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we'd only recommend using this for simple demos.
 
-### Add React to a Website {#add-react-to-a-website}
+### React വെബ്സിടിൽ ചെര്ക്കുക {#add-react-to-a-website}
 
 You can [add React to an HTML page in one minute](/docs/add-react-to-a-website.html). You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.
 
