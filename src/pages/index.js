@@ -15,7 +15,7 @@ import TitleAndMetaTags from 'components/TitleAndMetaTags';
 import Layout from 'components/Layout';
 import {colors, media, sharedStyles} from 'theme';
 import loadScript from 'utils/loadScript';
-import createOgUrl from 'utils/createOgUrl';
+import createCanonicalUrl from 'utils/createCanonicalUrl';
 import {babelURL} from 'site-constants';
 import logoWhiteSvg from 'icons/logo-white.svg';
 
@@ -50,8 +50,13 @@ class Home extends Component {
     return (
       <Layout location={location}>
         <TitleAndMetaTags
+<<<<<<< HEAD
           title="React &ndash; യൂസര്‍ ഇന്റര്‍ഫേസുകള്‍ നിര്‍മ്മിക്കുവാനായി ഒരു ‍ജാവാസ്ക്രിപ്റ്റ് ലൈബ്രറി"
           ogUrl={createOgUrl('index.html')}
+=======
+          title="React &ndash; A JavaScript library for building user interfaces"
+          canonicalUrl={createCanonicalUrl('/')}
+>>>>>>> 2d9c2785dd9bd1d2876dd2c5b1e3bc233b115f3e
         />
         <div css={{width: '100%'}}>
           <header
