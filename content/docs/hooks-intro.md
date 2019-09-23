@@ -31,7 +31,12 @@ function Example() {
 
 >കുറിപ്പ്
 >
+<<<<<<< HEAD
 >React 16.8.0 ൽ ആണ് hooks ലൈബ്രറിയിൽ ചേർക്കുന്നത്. നിങ്ങൾ hooks ഉപയോഗിക്കുമ്പോൾ React DOM ഉൾപ്പടെ എല്ലാ ലൈബ്രറികളും അപ്ഗ്രേഡ് ചെയാൻ മറക്കരുത്. React Native അടുത്ത റിലീസ് മുതൽ hooks ഉൾപ്പെടുത്തും.
+=======
+>React 16.8.0 is the first release to support Hooks. When upgrading, don't forget to update all packages, including React DOM.
+>React Native supports Hooks since [the 0.59 release of React Native](https://facebook.github.io/react-native/blog/2019/03/12/releasing-react-native-059).
+>>>>>>> 8edfc7ce78cbf5b6024ab5f891f0eee69c792d1f
 
 ## ദൃശ്യം {#video-introduction}
 
