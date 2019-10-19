@@ -31,13 +31,11 @@ function Example() {
 
 >കുറിപ്പ്
 >
-=======
->React 16.8.0 ൽ ആണ് hooks ലൈബ്രറിയിൽ ചേർക്കുന്നത്. നിങ്ങൾ hooks ഉപയോഗിക്കുമ്പോൾ React DOM ഉൾപ്പടെ എല്ലാ ലൈബ്രറികളും അപ്ഗ്രേഡ് ചെയാൻ മറക്കരുത്. React Native അടുത്ത റിലീസ് മുതൽ hooks ഉൾപ്പെടുത്തും.React Native supports Hooks since [the 0.59 release of React Native](https://facebook.github.io/react-native/blog/2019/03/12/releasing-react-native-059).
-=======
+>React 16.8.0 ൽ ആണ് hooks ലൈബ്രറിയിൽ ചേർക്കുന്നത്. നിങ്ങൾ hooks ഉപയോഗിക്കുമ്പോൾ React DOM ഉൾപ്പടെ എല്ലാ ലൈബ്രറികളും അപ്ഗ്രേഡ് ചെയാൻ മറക്കരുത്. React Native അടുത്ത റിലീസ് മുതൽ hooks ഉൾപ്പെടുത്തും.
 
 ## ദൃശ്യം {#video-introduction}
 
-React Conference 2018 ൽ വച്ച് സോഫി അൽപ്പർട്ടും ഡാൻ അബ്രമോവും കൂടി ആണ് hooks ആദ്യം ആയി അവതരിപ്പിച്ചത്. പിന്നീട് റയാൻ ഫ്ലോറെൻസ് hooks ഉപയോഗിച്ച് ഒരു അപ്ലിക്കേഷൻ എഴുതി കാണിക്കുകയും ചെയ്തു. അതിന്റെ ദൃശ്യങ്ങൾ ചുവടെ ചേർക്കുന്നു.
+>React 16.8.0 ൽ ആണ് hooks ലൈബ്രറിയിൽ ചേർക്കുന്നത്. നിങ്ങൾ hooks ഉപയോഗിക്കുമ്പോൾ React DOM ഉൾപ്പടെ എല്ലാ ലൈബ്രറികളും അപ്ഗ്രേഡ് ചെയാൻ മറക്കരുത്. React Native അടുത്ത റിലീസ് മുതൽ hooks ഉൾപ്പെടുത്തും.React Native supports Hooks since [the 0.59 release of React Native](https://facebook.github.io/react-native/blog/2019/03/12/releasing-react-native-059).React Conference 2018 ൽ വച്ച് സോഫി അൽപ്പർട്ടും ഡാൻ അബ്രമോവും കൂടി ആണ് hooks ആദ്യം ആയി അവതരിപ്പിച്ചത്. പിന്നീട് റയാൻ ഫ്ലോറെൻസ് hooks ഉപയോഗിച്ച് ഒരു അപ്ലിക്കേഷൻ എഴുതി കാണിക്കുകയും ചെയ്തു. അതിന്റെ ദൃശ്യങ്ങൾ ചുവടെ ചേർക്കുന്നു.
 
 <br>
 
@@ -83,10 +81,7 @@ Hooks ഉപയോഗിക്കുമ്പോൾ ആണെങ്കിൽ ന
 കോഡ് പുനരുപയോഗം, കോഡ് ഓർഗനൈസേഷൻ എന്നിവക്കു കൂടുതൽ ബുദ്ധിമുട്ട് ഉണ്ടാക്കുന്നതിനു പുറമേ, ക്ലാസുകൾ മനസിലാക്കുക എന്നത് React പഠിക്കുന്നവർക് ഒരു വലിയ തടസ്സം ആണ് സൃഷ്ടിക്കുന്നത്. JavaScript ൽ ക്ലാസുകൾ മറ്റു പ്രോഗ്രാമിങ് ഭാഷകൾ നിന്ന് വിഭിന്നമായി പ്രവർത്തിക്കുന്നു, ഇതിന്റെ ഒരു ഉദാഹരണം ആണ് `this`. Babel ന്റെ സ്ഥിരത ആവാത്ത [syntax proposals](https://babeljs.io/docs/en/babel-plugin-transform-class-properties/) ഉപയോഗിച്ചില്ലെങ്കിൽ ഇത് തന്നെ വളരെ അധികം കോഡ് ലൈനുകൾ നീളും. Props, State, ഒരേ ദിശയിൽ അഴുക്കു തുടങ്ങിയ ആശയങ്ങൾ നന്നായി മനസിലായവക്ക് പോലും class ഒരു തടസ്സം ആയി നില്കുന്നത് കണ്ടിട്ടുണ്ട്. ഇത് കൂടാതെ എപ്പോഴാണ് ഫങ്ക്ഷന് അല്ലെങ്കിൽ ക്ലാസ് എഴുതേണ്ടത് എന്നത് മുതിർന്ന React ഡെവലപ്പേഴ്സിന് ഇടയിൽ പോലും തർക്കവിഷയം ആണ്.
 
 React പുറത്തു വന്നിട്ടു ഇപ്പോൾ അഞ്ചു വര്ഷം ആകുന്നു, ഇനി ഉള്ള അഞ്ചു വർഷത്തേക്ക് കൂടി React ഉപയോഗം പ്രസക്തം ആയി നിൽക്കണം ഞങ്ങളുടെ ലക്ഷ്യം. [Svelte](https://svelte.technology/), [Angular](https://angular.io/), [Glimmer](https://glimmerjs.com/) എന്നീ ഫ്രെയിംവർക്കുകൾ തെളിയിച്ച പോലെ, [ahead-of-time compilation](https://en.wikipedia.org/wiki/Ahead-of-time_compilation) വളരെ അധികം സാധ്യത ഉള്ള ഒരു കൺസെപ്റ് ആണ്. പ്രിത്യേകിച് HTML ടെംപ്ലേറ്റുകൾ ഉണ്ടാകാൻ എന്നതിൽ ഉപരിയായി അതു ഉപയോഗിക്കുമ്പോൾ. ഈ അടുത്ത് ഞങ്ങൾ [Prepack](https://prepack.io/) ഉപയോഗിച്ച് [component folding](https://github.com/facebook/react/issues/7323) എന്ന ടെക്നോളജി React ൽ പരീക്ഷിച്ചു നോക്കുകയും, വളരെ നല്ല ഫലം കാണുകയും ഉണ്ടായി. പക്ഷെ പലപ്പോഴും Class കംപോണേന്റ്സ് ഉപയോഗിക്കുന്നത് പ്രവചിക്കാനാവാത്ത പരിണിതഫലങ്ങൾ ഉണ്ടാകുന്നതായി ഞങ്ങൾ കണ്ടു. ഇവക്കു പ്രതിവിധികൾ കൂടി ഉൾപെടുത്തുമ്പോൾ നമ്മൾ ചെയുന്ന പരീക്ഷണങ്ങൾ വേഗം കുറഞ്ഞു കിട്ടേണ്ട പ്രയോജനം ചെയുന്നു. ഇത് മാത്രം അല്ല Class എന്ന ഘടന പഴയ ബ്രൗസേഴ്സിന് വേണ്ടി വിവർത്തനം ചെയുമ്പോൾ കുറെ അധികം കോഡ് വരുന്നതായി കാണാം 
-
 ഇതിനു ഒരു പരിഹാരം എന്ന നിലയിൽ **Hooks നിങ്ങൾക്കു class ഉപയോഗിക്കാതെ തന്നെ React ന്റെ ഫീച്ചർസ് ഉപയോഗിക്കാം**. ആശയങ്ങളിൽ React Components എപ്പോഴും ഫങ്ക്ഷൻസിനോട് ആണ് അടുത്ത് നിന്നിട്ടുള്ളത്. Hooks ഉപയോഗിക്കുമ്പോൾ നിങ്ങൾക്കു ഫങ്ക്ഷന്സ് എഴുതുന്നതിന്റെ ഗുണങ്ങൾ React സ്വഭാവം ചോർന്നു പോകാതെ തന്നെ ഉപയോഗിക്കാം. പക്ഷെ ഹൂക്സ് ഉപയോഗിക്കാൻ ആയി നിങ്ങൾ സങ്കീർണം ആയ ഫങ്ക്ഷണൽ പ്രോഗ്രാമ്മിങ് ആശയങ്ങൾ പഠിക്കേണ്ടത് ഇല്ല. 
-Additionally, React has been out for about five years, and we want to make sure it stays relevant in the next five years. As [Svelte](https://svelte.dev/), [Angular](https://angular.io/), [Glimmer](https://glimmerjs.com/), and others show, [ahead-of-time compilation](https://en.wikipedia.org/wiki/Ahead-of-time_compilation) of components has a lot of future potential. Especially if it's not limited to templates. Recently, we've been experimenting with [component folding](https://github.com/facebook/react/issues/7323) using [Prepack](https://prepack.io/), and we've seen promising early results. However, we found that class components can encourage unintentional patterns that make these optimizations fall back to a slower path. Classes present issues for today's tools, too. For example, classes don't minify very well, and they make hot reloading flaky and unreliable. We want to present an API that makes it more likely for code to stay on the optimizable path.
-=======
 
 മുൻപോട്ടു പോകുന്നതിനു മുൻപ് അറിഞ്ഞിരിക്കേണ്ട കുറച്ചു കാര്യങ്ങൾ:
 
