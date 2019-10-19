@@ -52,7 +52,7 @@ class Home extends Component {
         <TitleAndMetaTags
           title="React &ndash; യൂസര്‍ ഇന്റര്‍ഫേസുകള്‍ നിര്‍മ്മിക്കുവാനായി ഒരു ‍ജാവാസ്ക്രിപ്റ്റ് ലൈബ്രറി"
           ogUrl={createOgUrl('index.html')}
-          canonicalUrl={createCanonicalUrl('/')}
+           canonicalUrl={createCanonicalUrl('/')}
         />
         <div css={{width: '100%'}}>
           <header
