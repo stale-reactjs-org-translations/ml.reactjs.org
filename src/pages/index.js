@@ -151,7 +151,7 @@ class Home extends Component {
                       <ButtonLink
                         to="/docs/getting-started.html"
                         type="primary">
-                        ഉപയോഗിച്ചു തുടങ്ങൂ
+                        ഉപയോഗിച്ചു തുടങ്ങാം
                       </ButtonLink>
                     </CtaItem>
                     <CtaItem>
@@ -294,7 +294,7 @@ class Home extends Component {
                 }}>
                 <CtaItem>
                   <ButtonLink to="/docs/getting-started.html" type="primary">
-                    ഉപയോഗിച്ചു തുടങ്ങൂ
+                    ഉപയോഗിച്ചു തുടങ്ങാം
                   </ButtonLink>
                 </CtaItem>
                 <CtaItem>
