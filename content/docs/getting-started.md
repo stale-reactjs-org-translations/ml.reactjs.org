@@ -1,6 +1,6 @@
 ---
 id: getting-started
-title: ആമുഖം
+title: ഉപയോഗിച്ചു തുടങ്ങാം
 permalink: docs/getting-started.html
 next: add-react-to-a-website.html
 redirect_from:

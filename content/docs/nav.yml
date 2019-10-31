@@ -1,15 +1,15 @@
 - title: Installation
   items:
     - id: getting-started
-      title: Getting Started
+      title: ഉപയോഗിച്ചു തുടങ്ങാം
     - id: add-react-to-a-website
-      title: Add React to a Website
+      title:  ഒരു വെബ്‌സൈറ്റിൽ React ചേർക്കാം
     - id: create-a-new-react-app
-      title: Create a New React App
+      title: ഒരു പുതിയ React App ഉണ്ടാക്കാം
     - id: cdn-links
-      title: CDN Links
+      title: CDN ലിങ്കുകൾ
     - id: release-channels
-      title: Release Channels
+      title: റിലീസ് ചാനലുകൾ
 - title: Main Concepts
   isOrdered: true
   items:
