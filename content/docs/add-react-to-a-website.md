@@ -1,6 +1,6 @@
 ---
 id: add-react-to-a-website
-title: HTML പേജിൽ React ചേർക്കാം
+title: ഒരു വെബ്‌സൈറ്റിൽ React ചേർക്കാം
 permalink: docs/add-react-to-a-website.html
 redirect_from:
   - "docs/add-react-to-an-existing-app.html"

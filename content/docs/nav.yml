@@ -3,9 +3,9 @@
     - id: getting-started
       title: ഉപയോഗിച്ചു തുടങ്ങാം
     - id: add-react-to-a-website
-      title:  HTML പേജിൽ React ചേർക്കാം
+      title:  ഒരു വെബ്‌സൈറ്റിൽ React ചേർക്കാം
     - id: create-a-new-react-app
-      title: ഒരു പുതിയ React ആപ്പ് ഉണ്ടാക്കാം
+      title: ഒരു പുതിയ React App ഉണ്ടാക്കാം
     - id: cdn-links
       title: CDN ലിങ്കുകൾ
     - id: release-channels
