@@ -30,6 +30,6 @@ Each community consists of many thousands of React users.
 * [Reddit's React community](https://www.reddit.com/r/reactjs/)
 * [Spectrum's React community](https://spectrum.chat/react)
 
-## News {#news}
+## വാര്‍ത്തകള്‍ {#news}
 
-For the latest news about React, [follow **@reactjs** on Twitter](https://twitter.com/reactjs) and the [official React blog](/blog/) on this website.
+React സംബന്ധമായ പുതിയ വാര്‍ത്തകള്‍ക്കും വിവരങ്ങള്‍ക്കും [‍ഞങ്ങളുടെ ട്വിറ്റര്‍ അക്കൗണ്ട് ഫോളോ ചെയ്യുക **@reactjs**](https://twitter.com/reactjs) ഒപ്പം ‍ഞങ്ങളുടെ ഈ വെബ്സൈറ്റിലുള്ള   [ഒഫ്യീഷ്യല്‍ React ബ്ലോഗും](/blog/) സന്ദര്‍ശിക്കുക.
