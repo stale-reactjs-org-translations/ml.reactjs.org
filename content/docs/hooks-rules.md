@@ -46,7 +46,11 @@ npm install eslint-plugin-react-hooks --save-dev
 }
 ```
 
+<<<<<<< HEAD
 ഭാവിയിൽ Create React App ലും മറ്റു ടൂൾകിറ്റുകളിലും ഡീഫോൾട്ട് ആയി ഉൾപെടുത്താൻ ഞങ്ങൾ ഉദ്ദേശിക്കുന്നുണ്ട്.
+=======
+This plugin is included by default in [Create React App](/docs/create-a-new-react-app.html#create-react-app).
+>>>>>>> 335d64336234bcb7ba527ff94919a07da27f8549
 
 **അടുത്ത പേജിൽ നിങ്ങളുടെ [ഇഷ്ടാനുസരണമുള്ള Hooks](/docs/hooks-custom.html) എങ്ങനെ നിർമ്മിച്ചെടുക്കാം എന്ന് വിശദീകരിക്കുന്നുണ്ട്.** ഈ പേജിൽ ഈ 2 നിയമങ്ങൾ പിന്തുടരേണ്ടതിന്റെ ആവശ്യകത വിശദീകരിക്കുന്നതാണ്.
 
