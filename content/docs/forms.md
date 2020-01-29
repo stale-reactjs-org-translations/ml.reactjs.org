@@ -187,7 +187,7 @@ class FlavorForm extends React.Component {
 
 ## ഫയൽ ഇന്പുട്ട് ടാഗ്  {#the-file-input-tag}
 
-HTML- ൽ,  <input input = "file"> ഉപയോഗിച്ച്  സെർവറിലേക്ക് അപ്ലോഡുചെയ്യാനോ അല്ലെങ്കിൽ JavaScript വഴി കൈകാര്യം ചെയ്യാനോ അവരുടെ കമ്പ്യൂട്ടർ സ്റ്റോറേജിൽ  നിന്ന് ഒന്നോ അതിലധികമോ ഫയലുകൾ തിരഞ്ഞെടുക്കാനും  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) സഹായിക്കും .
+HTML- ൽ,  `<input input = "file"> `ഉപയോഗിച്ച്  സെർവറിലേക്ക് അപ്ലോഡുചെയ്യാനോ അല്ലെങ്കിൽ JavaScript വഴി കൈകാര്യം ചെയ്യാനോ അവരുടെ കമ്പ്യൂട്ടർ സ്റ്റോറേജിൽ  നിന്ന് ഒന്നോ അതിലധികമോ ഫയലുകൾ തിരഞ്ഞെടുക്കാനും  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) സഹായിക്കും .
 
 ```html
 <input type="file" />
