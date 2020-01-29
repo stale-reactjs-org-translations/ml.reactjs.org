@@ -1,6 +1,6 @@
 ---
 id: create-a-new-react-app
-title: Create a New React App
+title: ഒരു പുതിയ React App ഉണ്ടാക്കാം
 permalink: docs/create-a-new-react-app.html
 redirect_from:
   - "docs/add-react-to-a-new-app.html"
@@ -8,38 +8,38 @@ prev: add-react-to-a-website.html
 next: cdn-links.html
 ---
 
-Use an integrated toolchain for the best user and developer experience.
+ഏറ്റവും മികച്ച ഡെവലപ്പർ എക്സ്പീരിയൻസിനും യൂസർ എക്സ്പീരിയൻസിനും വേണ്ടി ഇന്റഗ്രേറ്റഡ് ആയിട്ടുള്ള ഒരു Toolchain ഉപയോഗിക്കാം.
 
-This page describes a few popular React toolchains which help with tasks like:
+താഴെ പറയുന്ന കാര്യങ്ങൾ എളുപ്പമാക്കാൻ സഹായിക്കുന്ന ചില പ്രമുഖ Toolchain-നുകളെ കുറിച്ചാണ് ഈ പേജിൽ പ്രതിപാദിച്ചിരിക്കുന്നത്.
 
-* Scaling to many files and components.
-* Using third-party libraries from npm.
-* Detecting common mistakes early.
-* Live-editing CSS and JS in development.
-* Optimizing the output for production.
+* ഒരുപാട് ഫയലുകളും Component-കളുമായി കൂട്ടിച്ചേർത്തു application വലുതാക്കിയെടുക്കാൻ
+* npm-ഇൽ നിന്നും ലഭ്യമാകുന്ന 3rd party ലൈബ്രറികൾ ഉപയോഗിക്കാൻ
+* സാധാരണയായി വരുത്തുന്ന തെറ്റുകൾ നേരത്തത്തെ തിരിച്ചറിയാൻ
+* ഡെവലപ്മെന്റ് സമയത്ത് CSS-ലും JS-ലും വരുത്തുന്ന മാറ്റങ്ങൾ തത്സമയം വീക്ഷിക്കാൻ
+* പ്രൊഡക്ഷൻ സാഹചര്യത്തിനനുസൃതമായി ഔട്ട്പുട്ട് optimize ചെയ്തെടുക്കാൻ.
 
-The toolchains recommended on this page **don't require configuration to get started**.
+ഈ പേജിൽ പറയുന്ന Toolchain-നുകൾ **ഉപയോഗിക്കാൻ യാതൊരു വിധ configuration-ന്റെയും ആവശ്യമില്ല**.
 
-## You Might Not Need a Toolchain {#you-might-not-need-a-toolchain}
+## നിങ്ങൾക്ക് ഒരു Toolchain ആവശ്യമായെന്നു തന്നെ വരില്ല. {#you-might-not-need-a-toolchain}
 
-If you don't experience the problems described above or don't feel comfortable using JavaScript tools yet, consider [adding React as a plain `<script>` tag on an HTML page](/docs/add-react-to-a-website.html), optionally [with JSX](/docs/add-react-to-a-website.html#optional-try-react-with-jsx).
+മുകളിൽ പ്രതിപാദിച്ചിരിക്കുന്ന വിഷയങ്ങൾ നിങ്ങൾക്ക് ഒരു പ്രശ്നമായി തോന്നിയിട്ടില്ലെങ്കിലോ അല്ലെങ്കിൽ JavaScript ടൂളുകൾ ഉപയോഗിക്കാൻ നിങ്ങൾ പ്രാപ്തരായിട്ടില്ലെങ്കിലോ നിങ്ങൾക്ക് [React ഒരു plain `<script>` ടാഗ് ആയി HTML പേജിൽ](/docs/add-react-to-a-website.html) ഉപയോഗിക്കാവുന്നതാണ്, അതിനോടൊപ്പം [വേണമെങ്കിൽ JSX](/docs/add-react-to-a-website.html#optional-try-react-with-jsx)-ഉം ഉപയോഗിക്കാം.
 
-This is also **the easiest way to integrate React into an existing website.** You can always add a larger toolchain if you find it helpful!
+**നിലവിലുള്ള ഒരു വെബ്‌സൈറ്റിൽ React കൂട്ടിച്ചേർക്കുന്നതിനുള്ള ഏറ്റവും എളുപ്പമായ മാർഗ്ഗമാണിത്**. നിങ്ങൾക്ക് മറ്റൊരു വലിയ Toolchain ഉപകാരപ്രദമായി തോന്നുകയാണെങ്കിൽ അത് ഉപയോഗിക്കാവുന്നതാണ്!
 
-## Recommended Toolchains {#recommended-toolchains}
+## ശുപാർശ ചെയ്യുന്ന Toolchain-കൾ {#recommended-toolchains}
 
-The React team primarily recommends these solutions:
+React ടീം പ്രധാനമായി ശുപാർശ ചെയ്യുന്നത് ഈ toolchain-കളാണ്:
 
-- If you're **learning React** or **creating a new [single-page](/docs/glossary.html#single-page-application) app,** use [Create React App](#create-react-app).
-- If you're building a **server-rendered website with Node.js,** try [Next.js](#nextjs).
-- If you're building a **static content-oriented website,** try [Gatsby](#gatsby).
-- If you're building a **component library** or **integrating with an existing codebase**, try [More Flexible Toolchains](#more-flexible-toolchains).
+- നിങ്ങൾ **React പഠിക്കുയാണെങ്കിലോ** അല്ലെങ്കിൽ **ഒരു പുതിയ React app നിർമ്മിക്കുകയാണെങ്കിലോ** [Create React App](#create-react-app) ഉപയോഗിക്കാം.
+- **Node.js ഉപയോഗിച്ച് server render ചെയ്യുന്ന വെബ്‌സൈറ്റ്** ആണ് ഉണ്ടാക്കുന്നതെങ്കിൽ [Next.js](#nextjs) പരീക്ഷിച്ചു നോക്കാം.
+- **static വെബ്‌സൈറ്റ്** ആണ് നിര്മിക്കുന്നതെങ്കിൽ [Gatsby](#gatsby) പരീക്ഷിച്ചു നോക്കാവുന്നതാണ്.
+- നിങ്ങൾ ഒരു **component ലൈബ്രറിയോ** അല്ലെങ്കിൽ നിലവിലുള്ള ഒരു കോഡ്ബേസ് വികസിപ്പിച്ചെടുക്കാൻ ശ്രമിക്കുകയോ ആണെങ്കിൽ, [കൂടുതൽ Flexible ആയിട്ടുള്ള Toolchains](#more-flexible-toolchains) നോക്കാവുന്നതാണ്.
 
 ### Create React App {#create-react-app}
 
-[Create React App](https://github.com/facebookincubator/create-react-app) is a comfortable environment for **learning React**, and is the best way to start building **a new [single-page](/docs/glossary.html#single-page-application) application** in React.
+**React പഠിക്കുന്നതിനും** **ഒരു [single-page](/docs/glossary.html#single-page-application) React App** മികച്ച രീതിയിൽ ഉണ്ടാക്കിയെടുക്കുന്നതിനുള്ള ഏറ്റവും സുഖകരമായ സാഹചര്യം സൃഷ്ടിക്കുന്ന toolchain ആണ് [Create React App](https://github.com/facebookincubator/create-react-app).
 
-It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have Node >= 6 and npm >= 5.2 on your machine. To create a project, run:
+ഇത് നിങ്ങൾക്ക് വേണ്ടി ഏറ്റവും പുതിയ JavaScript ഫീച്ചറുകൾ അടങ്ങിയ  മികച്ച ഒരു ഡെവലപ്പ്മെന്റ് സാഹചര്യം ഒരുക്കിത്തരികയും പ്രൊഡക്ഷനു വേണ്ടി നിങ്ങളുടെ app-നെ optimized ആക്കുകയും ചെയ്യുന്നു. ഇതിനായി നിങ്ങളുടെ കമ്പ്യൂട്ടറിൽ Node-ന്റെ 8.10-നേക്കാൾ ഉയർന്ന പതിപ്പും npm-ന്റെ 5.6-നേക്കാൾ ഉയർന്ന പതിപ്പും ഉണ്ടായിരിക്കണം. ഒരു പ്രൊജക്റ്റ് നിർമ്മിക്കുന്നതിനായി താഴെയുള്ള കമാൻഡ് റൺ ചെയ്യുക:
 
 ```bash
 npx create-react-app my-app
@@ -47,48 +47,52 @@ cd my-app
 npm start
 ```
 
->Note
+>കുറിപ്പ്
 >
->`npx` on the first line is not a typo -- it's a [package runner tool that comes with npm 5.2+](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b).
+>`npx` എന്നത് ടൈപ്പ് ചെയ്തപ്പോൾ തെറ്റിയതല്ല -- അത് [npm 5.2-നു മുകളിൽ ഉള്ള പതിപ്പുകളോടൊപ്പം വരുന്ന ഒരു പാക്കേജ് റണ്ണർ ടൂൾ](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) ആണ്.
 
-Create React App doesn't handle backend logic or databases; it just creates a frontend build pipeline, so you can use it with any backend you want. Under the hood, it uses [Babel](https://babeljs.io/) and [webpack](https://webpack.js.org/), but you don't need to know anything about them.
+Create React App ഒരിക്കലും backend ലോജിക്കുകളോ ഡാറ്റാബേസുകളോ കൈകാര്യം ചെയ്യില്ല; ഇത് ഒരു frontend build pipeline മാത്രം ഉണ്ടാക്കുന്നതിനാൽ നിങ്ങൾക്ക് ഇഷ്ടമുള്ള backend-നോടോപ്പം ഉപയോഗിക്കാവുന്നതാണ്. അടിസ്ഥാനപരമായി ഇത് ഉപയോഗിച്ചിരിക്കുന്നത് [Babel](https://babeljs.io/)-ഉം [webpack](https://webpack.js.org/)-ഉം ആണ്. എന്നാൽ നിങ്ങൾ അതിനെ കുറിച്ചെല്ലാം അറിഞ്ഞിരിക്കണം എന്ന് നിർബന്ധമില്ല.
 
-When you're ready to deploy to production, running `npm run build` will create an optimized build of your app in the `build` folder. You can learn more about Create React App [from its README](https://github.com/facebookincubator/create-react-app#create-react-app-) and the [User Guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#table-of-contents).
+നിങ്ങൾ പ്രൊഡക്ഷനിലേക്ക് ഡിപ്ലോയ് ചെയ്യാൻ തയ്യാറാകുമ്പോൾ `npm run build` എന്ന കമാൻഡ് റൺ ചെയ്‌താൽ `build` ഫോൾഡറിനകത്ത് നിങ്ങളുടെ app-ന്റെ ഏറ്റവും optimize ആയിട്ടുള്ള ഒരു ബിൽഡ് ഉണ്ടായി വരുന്നതാണ്. നിങ്ങൾക്ക് Create React App-നെ കുറിച്ച് കൂടുതൽ മനസ്സിലാക്കാൻ [അതിന്റെ README](https://github.com/facebookincubator/create-react-app#create-react-app--) യോ [യൂസർ ഗൈഡോ](https://facebook.github.io/create-react-app/) നോക്കാവുന്നതാണ്.
 
 ### Next.js {#nextjs}
 
-[Next.js](https://nextjs.org/) is a popular and lightweight framework for **static and server‑rendered applications** built with React. It includes **styling and routing solutions** out of the box, and assumes that you're using [Node.js](https://nodejs.org/) as the server environment.
+React ഉപയോഗിച്ച്‌ **static ആയിട്ടുള്ളതും server render ചെയ്യുന്നതുമായ application**-കൾ നിർമ്മിക്കുന്നതിനുള്ള ഏറ്റവും പപ്രശസ്തവും അമിതഭാരമില്ലാത്തതുമായ ഒരു ലൈബ്രറിയാണ്  [Next.js](https://nextjs.org/). **സ്റ്റൈൽ ചെയ്യുന്നതിനും route ചെയ്യുന്നതിനുമുള്ള ഉപാധികൾ** അതിനകത്തു തന്നെ നിലവിലുണ്ട്. [Node.js](https://nodejs.org/)-നെയാണ് നിങ്ങളുടെ സെർവർ ആയി ഇത് പ്രതീക്ഷിക്കുന്നത്.
 
-Learn Next.js from [its official guide](https://nextjs.org/learn/).
+Next.js നിങ്ങൾക്ക് [അതിന്റെ ഒഫിഷ്യൽ ഗൈഡിൽ](https://nextjs.org/learn/) നിന്നും പഠിച്ചെടുക്കാം.
 
 ### Gatsby {#gatsby}
 
-[Gatsby](https://www.gatsbyjs.org/) is the best way to create **static websites** with React. It lets you use React components, but outputs pre-rendered HTML and CSS to guarantee the fastest load time.
+React ഉപയോഗിച്ച് **static വെബ്‌സൈറ്റുകൾ** നിർമ്മിക്കുന്നതിനുള്ള ഏറ്റവും മികച്ച ഉപാധിയാണ് [Gatsby](https://www.gatsbyjs.org/). ഇതിൽ നിങ്ങൾ React components ആണ് ഉപയോഗിക്കുന്നതെങ്കിലും വേഗമേറിയ ലോഡിങ്ങ് ഉറപ്പു വരുത്തുന്ന രീതിയിൽ pre-render ചെയ്ത HTML-ഉം CSS-ഉം ആയിരിക്കും ഇതിന്റെ ഔട്ട്പുട്ട്.
 
-Learn Gatsby from [its official guide](https://www.gatsbyjs.org/docs/) and a [gallery of starter kits](https://www.gatsbyjs.org/docs/gatsby-starters/).
+[ഒഫിഷ്യൽ ഗൈഡി](https://www.gatsbyjs.org/docs/)ൽ നിന്നും [gallery of starter kit](https://www.gatsbyjs.org/docs/gatsby-starters/)-ൽ നിന്നും നിങ്ങൾക്ക് Gatsby പഠിച്ചെടുക്കാം.
 
-### More Flexible Toolchains {#more-flexible-toolchains}
+### കൂടുതൽ Flexible ആയിട്ടുള്ള Toolchains {#more-flexible-toolchains}
 
-The following toolchains offer more flexiblity and choice. We recommend them to more experienced users:
+താഴെ പറയുന്ന toolchain-കൾ കൂടുതൽ flexibility-യും രീതികളും നൽകുന്നവയാണ്. കൂടുതൽ പരിജ്ഞാനമുള്ളവർക്കേ ഞങ്ങൾ ഇത് ശുപാർശ ചെയ്യുന്നുള്ളൂ:
 
-- **[Neutrino](https://neutrinojs.org/)** combines the power of [webpack](https://webpack.js.org/) with the simplicity of presets, and includes a preset for [React apps](https://neutrinojs.org/packages/react/) and [React components](https://neutrinojs.org/packages/react-components/).
+- **[Neutrino](https://neutrinojs.org/)**: ഇതിൽ [webpack](https://webpack.js.org/)-ന്റെ കഴിവുകൾ preset-കളുടെ ലാളിത്യവുമായി കൂട്ടിച്ചേർത്തു [React app](https://neutrinojs.org/packages/react/)കൾക്കും [React component](https://neutrinojs.org/packages/react-components/)-കൾക്കും ചേർന്ന preset-കൾ ഉൾക്കൊള്ളിച്ചിരിക്കുന്നു.
 
-- **[nwb](https://github.com/insin/nwb)** is particularly great for [publishing React components for npm](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb). It [can be used](https://github.com/insin/nwb/blob/master/docs/guides/ReactApps.md#developing-react-apps-with-nwb) for creating React apps, too. 
+<<<<<<< HEAD
+- **[nwb](https://github.com/insin/nwb)**: ഇത് [React component-കൾ npm-ൽ പ്രസിദ്ധീകരിക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb), [React app-കൾ ഉണ്ടാക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactApps.md#developing-react-apps-with-nwb) ഉള്ള ഒരു മികച്ച ഉപാധിയാണ്.
 
+- **[Parcel](https://parceljs.org/)**: ഇത് [React-നൊപ്പം ഉപയോഗിക്കാവുന്ന](https://parceljs.org/recipes.html#react) വേഗമേറിയ configuration ആവശ്യമില്ലാത്ത ഒരു bundler ആണ്.
+=======
 - **[Parcel](https://parceljs.org/)** is a fast, zero configuration web application bundler that [works with React](https://parceljs.org/recipes.html#react).
+>>>>>>> 401b97e9591ac573eaf35c7cf57e5f145276d140
 
-- **[Razzle](https://github.com/jaredpalmer/razzle)** is a server-rendering framework that doesn't require any configuration, but offers more flexibility than Next.js.
+- **[Razzle](https://github.com/jaredpalmer/razzle)**: ഇത് Next.js-നേക്കാൾ flexibility വാഗ്‌ദാനം ചെയ്യുന്ന configuration ആവശ്യമില്ലാത്ത server-rendering framework ആണ്.
 
-## Creating a Toolchain from Scratch {#creating-a-toolchain-from-scratch}
+## തുടക്കം മുതൽ ഒരു toolchain ഉണ്ടാക്കിയെടുക്കൽ {#creating-a-toolchain-from-scratch}
 
-A JavaScript build toolchain typically consists of:
+ഒരു JavaScript ബിൽഡ് toolchain-ഇൽ സാധാരണയായി ഉണ്ടാകുന്നത്:
 
-* A **package manager**, such as [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/). It lets you take advantage of a vast ecosystem of third-party packages, and easily install or update them.
+* [Yarn](https://yarnpkg.com/) അല്ലെങ്കിൽ [npm](https://www.npmjs.com/) പോലെ ഒരു **package manager**. മറ്റുള്ളവർ ഉണ്ടാക്കി വെച്ചിട്ടുള്ള package-കൾ എളുപ്പത്തിൽ ഇൻസ്റ്റാൾ ചെയ്യാനും അപ്ഡേറ്റ് ചെയ്യാനും ഇത് സഹായിക്കുന്നു.
 
-* A **bundler**, such as [webpack](https://webpack.js.org/) or [Parcel](https://parceljs.org/). It lets you write modular code and bundle it together into small packages to optimize load time.
+* [webpack](https://webpack.js.org/) അല്ലെങ്കിൽ [Parcel](https://parceljs.org/) പോലെ ഒരു **bundler**. ചെറിയ ഭാഗങ്ങൾ ആയി കോഡ് എഴുതിയ ശേഷം ലോഡിങ്ങ് സമയം പരമാവധി കുറവായ രീതിയിൽ അവയെ ഒന്നിച്ചാക്കാൻ ഇത് സഹായിക്കുന്നു.
 
-* A **compiler** such as [Babel](https://babeljs.io/). It lets you write modern JavaScript code that still works in older browsers.
+* [Babel](https://babeljs.io/) പോലൊരു **compiler**. പഴയ ബ്രൗസറിലും ഓടുന്ന രീതിയിൽ പുതിയ JavaScript കോഡ് എഴുതാൻ ഇത് നിങ്ങളെ സഹായിക്കുന്നു.
 
-If you prefer to set up your own JavaScript toolchain from scratch, [check out this guide](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658) that re-creates some of the Create React App functionality.
+നിങ്ങൾക്ക് സ്വന്തമായി ഒരു JavaScript toolchain ഉണ്ടാക്കാൻ താല്പര്യമുണ്ടെങ്കിൽ [ഈ ഗൈഡ് നോക്കാവുന്നതാണ്](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658), അതിൽ Create React App-ന്റെ പ്രവർത്തികൾ പുനരാവിഷ്കരിക്കാൻ ശ്രമിച്ചിട്ടുണ്ട്.
 
-Don't forget to ensure your custom toolchain [is correctly set up for production](/docs/optimizing-performance.html#use-the-production-build).
+നിങ്ങൾ സ്വന്തമായി ഉണ്ടാക്കുന്ന toolchain [പ്രൊഡക്ഷനുതകുന്ന രീതിയിൽ കൃത്യമായാണ് വികസിപ്പിച്ചെടുത്തതെന്നു](/docs/optimizing-performance.html#use-the-production-build) ഉറപ്പു വരുത്തുക.

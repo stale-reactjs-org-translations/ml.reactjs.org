@@ -1,7 +1,8 @@
 ---
-title: An Application
+title: ഒരു ആപ്ലിക്കേഷന്‍
 order: 2
 domid: todos-example
 ---
 
-Using `props` and `state`, we can put together a small Todo application. This example uses `state` to track the current list of items as well as the text that the user has entered. Although event handlers appear to be rendered inline, they will be collected and implemented using event delegation.
+
+`props` & `state` ഉപയോഗിച്ച്, നമ്മള്‍ക്ക് ഒരു ചെറിയ റ്റുഡു ആപ്ലിക്കേഷന്‍ നിര്‍മ്മിക്കാവുന്നതാണ്. ഈ ഉദാഹരണത്തില്‍ ഇപ്പോഴുള്ള സാധനങ്ങളുടെ ലിസ്റ്റും യൂസര്‍ എന്റര്‍ ചെയ്യുന്ന ടെക്സ്റ്റ് ട്രാക് ചെയ്യുവാനും `state` ഉപയോഗിക്കുന്നു. ഇവന്റ് ഹാന്‍‍ഡ്ലേഴ്സ് ഇന്‍ലൈനായി റെന്റര്‍ ചെയ്യപ്പെടുന്നതായി തോന്നുമെങ്കിലും അവരെ കല്ക്ട് ചെയ്യത് ഇവന്റ് ഡെലഗേഷന്‍ ഉപയോഗിച്ചാണ് നടപ്പിലാക്കുന്നത്. 

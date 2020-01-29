@@ -1,12 +1,12 @@
 ---
 id: hello-world
-title: Hello World
+title: ഹലോ, വേൾഡ്
 permalink: docs/hello-world.html
 prev: cdn-links.html
 next: introducing-jsx.html
 ---
 
-The smallest React example looks like this:
+വളരെ ചെറിയ ഒരു ഉദാഹരണം നോക്കാം:
 
 ```js
 ReactDOM.render(
@@ -15,36 +15,37 @@ ReactDOM.render(
 );
 ```
 
-It displays a heading saying "Hello, world!" on the page.
+"Hello, world!" എന്നൊരു തലക്കെട്ടു നിങ്ങൾക്കു ഇപ്പോൾ പേജിൽ കാണാം.
 
 [](codepen://hello-world)
 
-Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
+ഒരു ഓൺലൈൻ എഡിറ്റർ തുറക്കാൻ മുകളിലുള്ള ലിങ്ക് ക്ലിക്കുചെയ്യുക. ചില മാറ്റങ്ങൾ വരുത്താൻ മടിക്കേണ്ടതില്ല, അവ ഔട്പുട്ടിനെ എങ്ങനെ ബാധിക്കുന്നുവെന്നത് കാണുക. ഈ ഗൈഡിലെ മിക്ക പേജുകളും ഇതിനുള്ള എഡിറ്റബിൾ ഉദാഹരണങ്ങൾ ഉണ്ടായിരിക്കും.
 
 
-## How to Read This Guide {#how-to-read-this-guide}
+## ഗൈഡ് വായിക്കേണ്ട രീതി {#how-to-read-this-guide}
 
-In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
 
->Tip
+ഈ ഗൈഡിൽ നമ്മൾ React ആപ്ലിക്കേഷനുകളുടെ നിർമാണ ബ്ലോക്കുകൾ പരിശോധിക്കും: Elements & Components. നിങ്ങൾക്കു ഈ പുനരുപയോഗിക്കാവുന്ന ചെറിയ കഷ്ണങ്ങൾ നിന്ന് നിങ്ങൾക്ക് സങ്കീർണ്ണമായ ആപ്ലിക്കേഷനുകൾ സൃഷ്ടിക്കാൻ കഴിയും.
+
+>ടിപ്പ്
 >
->This guide is designed for people who prefer **learning concepts step by step**. If you prefer to learn by doing, check out our [practical tutorial](/tutorial/tutorial.html). You might find this guide and the tutorial complementary to each other.
+>ഈ ഗൈഡ്, **സ്റ്റെപ്പ് മുഖേനയുള്ള പഠന ആശയങ്ങൾ** തിരഞ്ഞെടുക്കുന്നവരെ ഉദ്ദേശിച്ചുള്ളതാണ്. പഠിക്കുന്നതിലൂടെ പഠിക്കാൻ നിങ്ങൾ തിരഞ്ഞെടുക്കുകയാണെങ്കിൽ ഞങ്ങളുടെ [ട്യൂട്ടോറിയൽ](/tutorial/tutorial.html) പരിശോധിക്കുക. ഗൈഡും ട്യൂട്ടോറിയലും പരസ്പരം കോംപ്ലาമെന്റ് ചെയ്യുന്നതായി നിങ്ങൾക്കു കാണാം.
 
-This is the first chapter in a step-by-step guide about main React concepts. You can find a list of all its chapters in the navigation sidebar. If you're reading this from a mobile device, you can access the navigation by pressing the button in the bottom right corner of your screen.
+പ്രധാന React ആശയങ്ങളെക്കുറിച്ചുള്ള ഘട്ടം ഘട്ടമായുള്ള ഗൈഡിലെ ആദ്യ അധ്യായം ഇതാണ്. നാവിഗേഷൻ സൈറ്റിലെ എല്ലാ അദ്ധ്യായങ്ങളുടേയും ഒരു പട്ടിക കാണാം. നിങ്ങൾ ഒരു മൊബൈൽ ഉപകരണത്തിൽ നിന്ന് ഇത് വായിച്ചാൽ, നിങ്ങളുടെ സ്ക്രീനിന്റെ ചുവടെ വലത് കോണിലുള്ള ബട്ടൺ അമർത്തി നാവിഗേഷൻ ആക്സസ് ചെയ്യാവുന്നതാണ്.
 
-Every chapter in this guide builds on the knowledge introduced in earlier chapters. **You can learn most of React by reading the “Main Concepts” guide chapters in the order they appear in the sidebar.** For example, [“Introducing JSX”](/docs/introducing-jsx.html) is the next chapter after this one.
+മുൻ അധ്യായങ്ങളിൽ അവതരിപ്പിച്ചിരിക്കുന്ന അറിവുകളെ അടിസ്ഥാനമാക്കി ആണ് ഈ പാഠഭാഗം നിർമിച്ചിരിക്കുന്നത്. **React നെ കുറിച്ച് ഉള്ള ഭൂരിഭാഗം കാര്യങ്ങളും സൈഡ്ബാറിലെ "Main Concepts" ൽ ഉള്ള അധ്യായങ്ങൾ അതേ ക്രമത്തിൽ വായിച്ചാൽ മനസിലാക്കാം.** ഉദാഹരണത്തിന്, [“Introducing JSX”](/docs/introducing-jsx.html) ആണ് അടുത്ത അധ്യായം.
 
-## Knowledge Level Assumptions {#knowledge-level-assumptions}
+## മുൻപേ അറിയേണ്ട കാര്യങ്ങൾ {#knowledge-level-assumptions}
 
-React is a JavaScript library, and so we'll assume you have a basic understanding of the JavaScript language. **If you don't feel very confident, we recommend [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won't have to feel like you're learning both React and JavaScript at the same time.
+React ഒരു JavaScript ലൈബ്രറി ആണ്, അതിനാൽ നമ്മൾ JavaScript ഭാഷയെ കുറിച്ചുള്ള അടിസ്ഥാന ധാരണയുള്ളതായി കരുതുന്നു. **നിങ്ങൾക്കു ആത്മവിശ്വാസം കുറവാണെങ്കിൽ ഈ ട്യൂട്ടോറിയൽ [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) ചെയ്തു നോക്കാവുന്നത് ആണ്**. അരമണിക്കൂർ തൊട്ടു ഒരു മണിക്കൂർ വരെ ദൈർക്യം ഉള്ള ഈ tutorial ചെയ്താൽ നിങ്ങൾക്കു React ഉം JavaScript ഉം ഒരുമിച്ചു പഠിക്കുന്നതിന്റെ കാഠിന്യം ഒഴിവാക്കാം.
 
->Note
+>കുറിപ്പ്
 >
->This guide occasionally uses some of the newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+>ഈ ഗൈഡ് പുതിയ JavaScript syntax ഉദാഹരണങ്ങളിൽ ഉപയോഗിച്ചിട്ടുണ്ട്. JavaScript ഉപയോഗിച്ചിട്ട് കുറച്ചു വർഷങ്ങൾ ആയി എങ്കിൽ, [ഈ മൂന്ന് പോയിന്റുകൾ](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) വായിക്കുന്നത് നല്ലതായിരിക്കും.
 
 
-## Let's Get Started! {#lets-get-started}
+## നമുക്കു തുടങ്ങാം! {#lets-get-started}
 
-Keep scrolling down, and you'll find the link to the [next chapter of this guide](/docs/introducing-jsx.html) right before the website footer.
+ഇതിനു താഴെ website footer ൽ നിങ്ങൾക്കു [അടുത്ത അദ്ധ്യായത്തിന്റെ ലിങ്ക്](/docs/introducing-jsx.html) ലഭ്യമാണ് 
 
 
