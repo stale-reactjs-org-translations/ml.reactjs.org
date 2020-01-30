@@ -73,13 +73,11 @@ React ഉപയോഗിച്ച് **static വെബ്‌സൈറ്റു�
 
 - **[Neutrino](https://neutrinojs.org/)**: ഇതിൽ [webpack](https://webpack.js.org/)-ന്റെ കഴിവുകൾ preset-കളുടെ ലാളിത്യവുമായി കൂട്ടിച്ചേർത്തു [React app](https://neutrinojs.org/packages/react/)കൾക്കും [React component](https://neutrinojs.org/packages/react-components/)-കൾക്കും ചേർന്ന preset-കൾ ഉൾക്കൊള്ളിച്ചിരിക്കുന്നു.
 
-<<<<<<< HEAD
 - **[nwb](https://github.com/insin/nwb)**: ഇത് [React component-കൾ npm-ൽ പ്രസിദ്ധീകരിക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb), [React app-കൾ ഉണ്ടാക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactApps.md#developing-react-apps-with-nwb) ഉള്ള ഒരു മികച്ച ഉപാധിയാണ്.
 
-- **[Parcel](https://parceljs.org/)**: ഇത് [React-നൊപ്പം ഉപയോഗിക്കാവുന്ന](https://parceljs.org/recipes.html#react) വേഗമേറിയ configuration ആവശ്യമില്ലാത്ത ഒരു bundler ആണ്.
-=======
+- **[nwb](https://github.com/insin/nwb)**: ഇത് [React component-കൾ npm-ൽ പ്രസിദ്ധീകരിക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb), [React app-കൾ ഉണ്ടാക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactApps.md#developing-react-apps-with-nwb) ഉള്ള ഒരു മികച്ച ഉപാധിയാണ്.
+
 - **[Parcel](https://parceljs.org/)** is a fast, zero configuration web application bundler that [works with React](https://parceljs.org/recipes.html#react).
->>>>>>> 401b97e9591ac573eaf35c7cf57e5f145276d140
 
 - **[Razzle](https://github.com/jaredpalmer/razzle)**: ഇത് Next.js-നേക്കാൾ flexibility വാഗ്‌ദാനം ചെയ്യുന്ന configuration ആവശ്യമില്ലാത്ത server-rendering framework ആണ്.
 
