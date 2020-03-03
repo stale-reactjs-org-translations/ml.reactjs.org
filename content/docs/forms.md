@@ -187,13 +187,18 @@ class FlavorForm extends React.Component {
 
 ## ഫയൽ ഇന്പുട്ട് ടാഗ്  {#the-file-input-tag}
 
-HTML- ൽ,  <input input = "file"> ഉപയോഗിച്ച്  സെർവറിലേക്ക് അപ്ലോഡുചെയ്യാനോ അല്ലെങ്കിൽ JavaScript വഴി കൈകാര്യം ചെയ്യാനോ അവരുടെ കമ്പ്യൂട്ടർ സ്റ്റോറേജിൽ  നിന്ന് ഒന്നോ അതിലധികമോ ഫയലുകൾ തിരഞ്ഞെടുക്കാനും  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) സഹായിക്കും .
+
+HTML- ൽ,  `<input input = "file"> `ഉപയോഗിച്ച്  സെർവറിലേക്ക് അപ്ലോഡുചെയ്യാനോ അല്ലെങ്കിൽ JavaScript വഴി കൈകാര്യം ചെയ്യാനോ അവരുടെ കമ്പ്യൂട്ടർ സ്റ്റോറേജിൽ  നിന്ന് ഒന്നോ അതിലധികമോ ഫയലുകൾ തിരഞ്ഞെടുക്കാനും  [File API](https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications) സഹായിക്കും .
+
+
 
 ```html
 <input type="file" />
 ```
 
+
 ഇതിന്റെ വാല്യൂ  റീഡ് ഒൺലി ആയതു കൊണ്ട് ഇത് React ലെ **uncontrolled ** കോംപോണേന്റ്  ആണ് . [താഴെ ഇതിനെ കുറിച്ച കൂടുതൽ കാണാം n](/docs/uncontrolled-components.html#the-file-input-tag).
+
 
 ## ഒന്നിലധികം ഇൻപുട്ടുകളെ കൈകാര്യം  ചെയ്യുവാൻ  {#handling-multiple-inputs}
 
@@ -251,8 +256,10 @@ class Reservation extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/wgedvV?editors=0010)
 
+
 ഇപ്പൊ നമ്മൾ ES6 ഉപയോഗിച്ച്  [computed property name](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names) 
 ഒരു ഇൻപുട്ടിന്റെ സ്റ്റേറ്റ് മാറ്റുന്ന സിന്റാക്സ് ആണ് കണ്ടത് :
+
 
 ```js{2}
 this.setState({
@@ -260,7 +267,9 @@ this.setState({
 });
 ```
 
-ഇതിന്റെ സമാനമായ  ES5 കോഡ് :
+
+ഇത് താഴെ തന്നിരിക്കുന്ന ES5  കോഡിന് തുല്യമാണ്  
+
 
 ```js{2}
 var partialState = {};
@@ -268,7 +277,7 @@ partialState[name] = value;
 this.setState(partialState);
 ```
 
-Also, since `setState()` automatically [merges a partial state into the current state](/docs/state-and-lifecycle.html#state-updates-are-merged), we only needed to call it with the changed parts.
+`setState()` ഓട്ടോമാറ്റിക്കായിട്ട് [പാർഷ്യൽ സ്റ്റേറ്റിനെ കറന്റ് സ്റ്റേറ്റ് ആയിട്ട് മെർജ് ചെയ്യുന്നതിനാൽ   ](/docs/state-and-lifecycle.html#state-updates-are-merged) നമ്മൾ ഇവയെ മാറ്റമുള്ള ഭാഗങ്ങളുടെ കൂടെ മാത്രം വിളിച്ചാൽ മതിയാകും .
 
 ## Controlled Input Null Value {#controlled-input-null-value}
 
