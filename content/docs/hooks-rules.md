@@ -27,6 +27,8 @@ Hooks ഒരു JavaScript ഫങ്ഷൻ ആണു, പക്ഷെ അവ ഉ
 
 ഈ 2 നിയമങ്ങളും പാലിക്കപ്പെടുന്നു എന്ന് ഉറപ്പ് വരുത്തുന്നതിനായി [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) എന്നൊരു പ്ലഗ്ഗിൻ ഞങ്ങൾ പുറത്തിറക്കിയിട്ടുണ്ട്. ഇത് നിങ്ങളുടെ പ്രോജെക്റ്റിൽ ഉൾപ്പെടുത്തി ഉപയോഗിച്ച് നോക്കാവുന്നതാണ്:
 
+This plugin is included by default in [Create React App](/docs/create-a-new-react-app.html#create-react-app).
+
 ```bash
 npm install eslint-plugin-react-hooks --save-dev
 ```
@@ -46,9 +48,13 @@ npm install eslint-plugin-react-hooks --save-dev
 }
 ```
 
+<<<<<<< HEAD
 This plugin is included by default in [Create React App](/docs/create-a-new-react-app.html#create-react-app).
 
 **അടുത്ത പേജിൽ നിങ്ങളുടെ [ഇഷ്ടാനുസരണമുള്ള Hooks](/docs/hooks-custom.html) എങ്ങനെ നിർമ്മിച്ചെടുക്കാം എന്ന് വിശദീകരിക്കുന്നുണ്ട്.** ഈ പേജിൽ ഈ 2 നിയമങ്ങൾ പിന്തുടരേണ്ടതിന്റെ ആവശ്യകത വിശദീകരിക്കുന്നതാണ്.
+=======
+**You can skip to the next page explaining how to write [your own Hooks](/docs/hooks-custom.html) now.** On this page, we'll continue by explaining the reasoning behind these rules.
+>>>>>>> 7e4f503d86bee08b88eed77a6c9d06077863a27c
 
 ## വിശദീകരണം {#explanation}
 
