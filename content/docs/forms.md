@@ -64,6 +64,7 @@ class NameForm extends React.Component {
 
 [**Try it on CodePen**](https://codepen.io/gaearon/pen/VmmPgp?editors=0010)
 
+<<<<<<< HEAD
 `value ` atribute സെറ്റ് ചെയ്തിരിക്കുന്നതിനാൽ കാണിക്കുന്ന വാല്യൂ എപ്പോളും `this.state.value` ആയിരിക്കും . handleChange `ഓരോ തവണ കീ അമർത്തുമ്പോഴും റൺ ചെയ്യുന്നതിനാൽ react സ്റ്റേറ്റ് ,കാണിക്കുന്ന വില എന്നിവ മാറി കൊണ്ടിരിക്കും 
 controlled components  വഴി ഓരോ സ്റ്റേറ്റ് മ്യൂറ്റേഷനും അതുമായി ബന്ധപ്പെട്ട  ഹാൻഡ്‌ലെർ  ഫങ്ക്ഷന് ഉണ്ടാകും .യൂസർ ഇന്പുട് ചെയ്യുമ്പോൾ തന്നെ വാലിഡേറ്റ് ചെയ്യാനും മോഡിഫൈ  ചെയ്യാനും സാധിക്കും.
 ഉദ്ദാഹരണത്തിനു  പേരുകൾ വലിയ അക്ഷരത്തിൽ തന്നെ വേണമെങ്കിൽ `handleChange ` ഫങ്ക്ഷന് താഴെ തന്ന പോലെ എഴുതിയാൽ മതിയാകും 
@@ -72,6 +73,11 @@ handleChange(event) {
   this.setState({value: event.target.value.toUpperCase()});
 }
 ```
+=======
+Since the `value` attribute is set on our form element, the displayed value will always be `this.state.value`, making the React state the source of truth. Since `handleChange` runs on every keystroke to update the React state, the displayed value will update as the user types.
+
+With a controlled component, the input's value is always driven by the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.
+>>>>>>> fa5e6e7a988b4cb465601e4c3beece321edeb812
 
 ## The textarea Tag {#the-textarea-tag}
 
@@ -215,7 +221,7 @@ class Reservation extends React.Component {
 
   handleInputChange(event) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.name === 'isGoing' ? target.checked : target.value;
     const name = target.name;
 
     this.setState({
