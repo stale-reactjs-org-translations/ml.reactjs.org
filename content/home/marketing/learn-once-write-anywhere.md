@@ -7,3 +7,7 @@ order: 2
 
 React, Node ഉപയോഗിച്ച് സെര്‍വ്വറുകളില്‍ റെണ്ടര്‍‍ ചെയ്യാനും [React Native](https://facebook.github.io/react-native/) ഉപയോഗിച്ച് മൊബൈല്‍ ആപ്പുകളില്‍ പ്രവര്‍ത്തിപ്പിക്കാനും സാധിക്കും. 
 
+<<<<<<< HEAD
+=======
+React can also render on the server using Node and power mobile apps using [React Native](https://reactnative.dev/).
+>>>>>>> b3c7f041586b71b31f556403426fcd7cab342535
