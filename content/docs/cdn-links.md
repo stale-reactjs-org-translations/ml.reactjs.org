@@ -3,7 +3,7 @@ id: cdn-links
 title: CDN ലിങ്കുകൾ
 permalink: docs/cdn-links.html
 prev: create-a-new-react-app.html
-next: hello-world.html
+next: release-channels.html
 ---
 
 
