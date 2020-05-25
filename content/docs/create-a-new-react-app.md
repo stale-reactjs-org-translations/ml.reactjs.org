@@ -79,6 +79,8 @@ React ഉപയോഗിച്ച് **static വെബ്‌സൈറ്റു�
 
 - **[nwb](https://github.com/insin/nwb)**: ഇത് [React component-കൾ npm-ൽ പ്രസിദ്ധീകരിക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactComponents.md#developing-react-components-and-libraries-with-nwb), [React app-കൾ ഉണ്ടാക്കുന്നതിനും](https://github.com/insin/nwb/blob/master/docs/guides/ReactApps.md#developing-react-apps-with-nwb) ഉള്ള ഒരു മികച്ച ഉപാധിയാണ്.
 
+- **[Nx](https://nx.dev/react)** is a toolkit for full-stack monorepo development, with built-in support for React, Next.js, [Express](https://expressjs.com/), and more.
+
 - **[Parcel](https://parceljs.org/)** is a fast, zero configuration web application bundler that [works with React](https://parceljs.org/recipes.html#react).
 
 - **[Razzle](https://github.com/jaredpalmer/razzle)**: ഇത് Next.js-നേക്കാൾ flexibility വാഗ്‌ദാനം ചെയ്യുന്ന configuration ആവശ്യമില്ലാത്ത server-rendering framework ആണ്.
