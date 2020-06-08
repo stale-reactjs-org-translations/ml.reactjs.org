@@ -53,7 +53,11 @@ class Home extends Component {
           title="React &ndash; യൂസര്‍ ഇന്റര്‍ഫേസുകള്‍ നിര്‍മ്മിക്കുവാനായി ഒരു ‍ജാവാസ്ക്രിപ്റ്റ് ലൈബ്രറി"
           canonicalUrl={createCanonicalUrl('/')}
         />
-        <div css={{width: '100%'}}>
+        <div
+          css={{
+            width: '100%',
+            marginTop: 60, // BLM
+          }}>
           <header
             css={{
               backgroundColor: colors.dark,
