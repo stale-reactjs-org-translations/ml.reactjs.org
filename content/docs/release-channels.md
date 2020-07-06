@@ -4,6 +4,8 @@ title: റിലീസ് ചാനലുകൾ
 permalink: docs/release-channels.html
 layout: docs
 category: installation
+prev: cdn-links.html
+next: hello-world.html
 ---
 
 ബഗ്ഗ്‌ റിപ്പോർട്ടുകൾ ഫയൽ ചെയ്യുന്നതിനും pull request-കൾ ഇടുന്നതിനും [RFC-കൾ സബ്മിറ്റ് ചെയ്യുന്നതിനും](https://github.com/reactjs/rfcs) വേണ്ടി സമ്പന്നമായ ഒരു ഓപ്പൺസോഴ്സ് കമ്മ്യൂണിറ്റിയെയാണ് React ആശ്രയിച്ചിരിക്കുന്നത്. കൂടുതൽ പ്രതികരണങ്ങൾ ലഭിക്കുന്നതിനായി റിലീസ് ചെയ്യാത്ത ഫീച്ചറുകൾ അടങ്ങിയ ചില ബിൽഡുകൾ ഞങ്ങൾ പങ്കുവെക്കാറുണ്ട്.
