@@ -31,17 +31,15 @@ function Example() {
 
 >കുറിപ്പ്
 >
-<<<<<<< HEAD
->React 16.8.0 ൽ ആണ് hooks ലൈബ്രറിയിൽ ചേർക്കുന്നത്. നിങ്ങൾ hooks ഉപയോഗിക്കുമ്പോൾ React DOM ഉൾപ്പടെ എല്ലാ ലൈബ്രറികളും അപ്ഗ്രേഡ് ചെയാൻ മറക്കരുത്. React Native [the 0.59 release of React Native](https://facebook.github.io/react-native/blog/2019/03/12/releasing-react-native-059) വേര്‍ഷന്‍ മുതല്‍ മുതൽ hooks സപ്പോര്‍ട്ട് ചെയ്യുന്നുണ്ട്. 
-=======
->React 16.8.0 is the first release to support Hooks. When upgrading, don't forget to update all packages, including React DOM.
->React Native supports Hooks since [the 0.59 release of React Native](https://reactnative.dev/blog/2019/03/12/releasing-react-native-059).
->>>>>>> bc91fe4101420f98454a59ac34c1cf1d4d4f4476
+>React 16.8.0 ൽ ആണ് hooks ലൈബ്രറിയിൽ ചേർക്കുന്നത്. നിങ്ങൾ hooks ഉപയോഗിക്കുമ്പോൾ React DOM ഉൾപ്പടെ എല്ലാ ലൈബ്രറികളും അപ്ഗ്രേഡ് ചെയാൻ മറക്കരുത്.
+>React Native [the 0.59 release of React Native](https://facebook.github.io/react-native/blog/2019/03/12/releasing-react-native-059) വേര്‍ഷന്‍ മുതല്‍ മുതൽ hooks സപ്പോര്‍ട്ട് ചെയ്യുന്നുണ്ട്. 
 
 ## ദൃശ്യം {#video-introduction}
 
 React Conference 2018 ൽ വച്ച് സോഫി അൽപ്പർട്ടും ഡാൻ അബ്രമോവും കൂടി ആണ് hooks ആദ്യം ആയി അവതരിപ്പിച്ചത്. പിന്നീട് റയാൻ ഫ്ലോറെൻസ് hooks ഉപയോഗിച്ച് ഒരു അപ്ലിക്കേഷൻ എഴുതി കാണിക്കുകയും ചെയ്തു. അതിന്റെ ദൃശ്യങ്ങൾ ചുവടെ ചേർക്കുന്നു.
-=======
+
+<br>
+
 <iframe width="650" height="366" src="//www.youtube.com/embed/dpw9EHDh2bM" frameborder="0" allowfullscreen></iframe>
 
 ## ബ്രേക്കിംഗ് മാറ്റങ്ങൾ ഇല്ല {#no-breaking-changes}
