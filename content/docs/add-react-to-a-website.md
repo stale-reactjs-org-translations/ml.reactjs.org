@@ -53,9 +53,16 @@ next: create-a-new-react-app.html
 ```html{5,6,9}
   <!-- ... മറ്റു HTML കോഡുകൾ ... -->
 
+<<<<<<< HEAD
   <!-- React ലോഡ് ചെയ്യുന്നു. -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+=======
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+>>>>>>> 3844da103db4c2dea4783f5b3a2a0b53708d04ab
 
   <!-- നമ്മുടെ React component ലോഡ് ചെയ്യുന്നു. -->
   <script src="like_button.js"></script>
@@ -84,7 +91,11 @@ const domContainer = document.querySelector('#like_button_container');
 ReactDOM.render(e(LikeButton), domContainer);
 ```
 
+<<<<<<< HEAD
 ഈ രണ്ട് വരികൾ നമ്മൾ ആദ്യത്തെ സ്റ്റെപ്പിൽ ചേർത്ത `<div>` കണ്ടെത്തുകയും നമ്മുടെ "ലൈക്ക്" ബട്ടൺ React component അതിനകത്ത് കാണിക്കുകയും ചെയ്യുന്നു.
+=======
+These two lines of code find the `<div>` we added to our HTML in the first step, and then display our "Like" button React component inside of it.
+>>>>>>> 3844da103db4c2dea4783f5b3a2a0b53708d04ab
 
 ### അത്രയേ ഉള്ളൂ! {#thats-it}
 
@@ -115,8 +126,8 @@ React ഉപയോഗിക്കുമ്പോൾ ചെയ്തു നോക
 നിങ്ങളുടെ അപ്ലിക്കേഷൻ സ്ക്രിപ്റ്റുകൾ Minify രൂപത്തിൽ ആണെങ്കിൽ അവ പ്രൊഡക്ഷനിൽ ഇടാൻ തയ്യാറായി ഇരിക്കുകയാണ്. നിങ്ങൾ ഡിപ്ലോയ് ചെയ്തിരിക്കുന്ന HTML ലോഡ് ചെയുന്നത് `production.min.js` എന്ന പേരിൽ അവസാനിക്കുന്ന React-ന്റെ പുതിയ പതിപ്പാണെന്നു ഉറപ്പു വരുത്തുക:
 
 ```js
-<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
 ```
 
 നിങ്ങളുടെ script-കൾക്ക് ഒരു മിനിഫിക്കേഷൻ സ്റ്റെപ് ഇല്ല എന്നുണ്ടെങ്കിൽ [ഇവിടെ നോക്കാവുന്നതാണ്](https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3).
@@ -184,7 +195,7 @@ return (
 `src` എന്നൊരു ഫോൾഡർ ഉണ്ടാക്കിയ ശേഷം ഈ ടെർമിനൽ കമാൻഡ് റൺ ചെയ്യുക:
 
 ```
-npx babel --watch src --out-dir . --presets react-app/prod 
+npx babel --watch src --out-dir . --presets react-app/prod
 ```
 
 >കുറിപ്പ്
