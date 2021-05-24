@@ -29,7 +29,7 @@ React ൽ form എലമെന്റ് കളുടെ പ്രവർത്ത
 
 ഉദ്ദാഹരണത്തിനു ,നമുക്ക്  മുൻപ് കണ്ട പേര് submit  ചെയ്യുന്ന ഉദാഹരണത്തിൽ പേര് ലോഗ് ചെയ്യണമെങ്കിൽ ഫോം നെ controlled component  ആയി എഴുതാം 
 
-```javascript{4,10-12,24}
+```javascript{4,10-12,21,24}
 class NameForm extends React.Component {
   constructor(props) {
     super(props);
