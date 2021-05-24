@@ -37,10 +37,14 @@ React ഡോക്യൂമെന്റേഷന്റെയും അനുബ�
 ### ഓൺലൈൻ പ്ലേ ഗ്രൗണ്ട് {#online-playgrounds}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 React-ൽ കളിച്ചു നോക്കുവാൻ താല്പര്യമുണ്ടെങ്കിൽ നിങ്ങൾക്ക് ഓൺലൈൻ കോഡ് പ്ലേ ഗ്രൗണ്ട് ഉപയോഗിക്കാവുന്നതാണ്. [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), അല്ലെങ്കിൽ [Glitch](https://glitch.com/edit/#!/remix/starter-react-template) എന്നീ പ്ലേ ഗ്രൗണ്ടുകളിൽ ഒരു Hello World template പരിശോധിച്ച് നോക്കാം..
 =======
 If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), [Glitch](https://glitch.com/edit/#!/remix/starter-react-template), or [Stackblitz](https://stackblitz.com/fork/react).
 >>>>>>> bc91fe4101420f98454a59ac34c1cf1d4d4f4476
+=======
+If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), or [Stackblitz](https://stackblitz.com/fork/react).
+>>>>>>> e60bca04f3da690256ce019bd8907c2b368589ee
 
 നിങ്ങളുടെ സ്വന്തം text editor ഉപയോഗിക്കാൻ ആണ് താല്പര്യമെങ്കിൽ നിങ്ങൾക്ക് ഈ [HTML ഫയൽ ഡൌൺലോഡ്](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html) ചെയ്യാം, അത് എഡിറ്റ് ചെയ്ത ശേഷം ഫയൽ സിസ്റ്റം വഴി നിങ്ങളുടെ ബ്രൗസറിൽ തുറന്നു നോക്കാം. വേഗത കുറഞ്ഞ കോഡ് രൂപാന്തരം ആയതിനാൽ ലളിതമായ ഡെമോക്ക് മാത്രമേ ഞങ്ങൾ ഇത് ശുപാർശ ചെയ്യുന്നുള്ളൂ.
 
