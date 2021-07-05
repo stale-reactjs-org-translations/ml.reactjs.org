@@ -53,9 +53,16 @@ next: create-a-new-react-app.html
 ```html{5,6,9}
   <!-- ... മറ്റു HTML കോഡുകൾ ... -->
 
+<<<<<<< HEAD
   <!-- React ലോഡ് ചെയ്യുന്നു. -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+=======
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
   <!-- നമ്മുടെ React component ലോഡ് ചെയ്യുന്നു. -->
   <script src="like_button.js"></script>
@@ -84,7 +91,11 @@ const domContainer = document.querySelector('#like_button_container');
 ReactDOM.render(e(LikeButton), domContainer);
 ```
 
+<<<<<<< HEAD
 ഈ രണ്ട് വരികൾ നമ്മൾ ആദ്യത്തെ സ്റ്റെപ്പിൽ ചേർത്ത `<div>` കണ്ടെത്തുകയും നമ്മുടെ "ലൈക്ക്" ബട്ടൺ React component അതിനകത്ത് കാണിക്കുകയും ചെയ്യുന്നു.
+=======
+These two lines of code find the `<div>` we added to our HTML in the first step, and then display our "Like" button React component inside of it.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ### അത്രയേ ഉള്ളൂ! {#thats-it}
 
@@ -115,8 +126,8 @@ React ഉപയോഗിക്കുമ്പോൾ ചെയ്തു നോക
 നിങ്ങളുടെ അപ്ലിക്കേഷൻ സ്ക്രിപ്റ്റുകൾ Minify രൂപത്തിൽ ആണെങ്കിൽ അവ പ്രൊഡക്ഷനിൽ ഇടാൻ തയ്യാറായി ഇരിക്കുകയാണ്. നിങ്ങൾ ഡിപ്ലോയ് ചെയ്തിരിക്കുന്ന HTML ലോഡ് ചെയുന്നത് `production.min.js` എന്ന പേരിൽ അവസാനിക്കുന്ന React-ന്റെ പുതിയ പതിപ്പാണെന്നു ഉറപ്പു വരുത്തുക:
 
 ```js
-<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
 ```
 
 നിങ്ങളുടെ script-കൾക്ക് ഒരു മിനിഫിക്കേഷൻ സ്റ്റെപ് ഇല്ല എന്നുണ്ടെങ്കിൽ [ഇവിടെ നോക്കാവുന്നതാണ്](https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3).
@@ -159,7 +170,11 @@ return (
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
+<<<<<<< HEAD
 `type="text/babel"` എന്ന attribute ചേർത്ത് നിങ്ങൾക്ക് ഏതൊരു `<script>` ടാഗിന്റെ കൂടെയും JSX ഉപയോഗിക്കാം. ഉദാഹരണത്തിന് നിങ്ങൾക്ക് [JSX ഉള്ള ഈ HTML ഫയൽ](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html) ഡൌൺലോഡ് ചെയ്ത് പരീക്ഷിച്ചു നോക്കാവുന്നതാണ്.
+=======
+Now you can use JSX in any `<script>` tag by adding `type="text/babel"` attribute to it. Here is [an example HTML file with JSX](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html) that you can download and play with.
+>>>>>>> 0bb0303fb704147452a568472e968993f0729c28
 
 ലളിതമായ ഡെമോകൾ ഉണ്ടാക്കുന്നതിനും പഠിക്കുന്നതിനും ഈ രീതി മതിയാകും. എന്നാൽ ഇത് നിങ്ങളുടെ വെബ്‌സൈറ്റിന്റെ വേഗത കുറക്കുന്നതിനാൽ **പ്രൊഡക്ഷൻ സാഹചര്യങ്ങൾക്ക് അനുകൂലമല്ല**. നിങ്ങൾ മുന്നോട്ട് പോകുന്നതിനനുസരിച്ച് ഈ പുതിയ `<script>` ടാഗുകളും `type="text/babel"` എന്ന attribute-കളും നമ്മൾ നീക്കം ചെയ്യും. പകരം, അടുത്ത ഭാഗത്തിൽ നമ്മൾ ഒരു JSX പ്രീപ്രോസസ്സർ ഉപയോഗിച്ച്‌ എല്ലാ `<script>` ടാഗുകളെയും കൺവേർട്ട് ചെയ്യും.
 
@@ -184,7 +199,7 @@ return (
 `src` എന്നൊരു ഫോൾഡർ ഉണ്ടാക്കിയ ശേഷം ഈ ടെർമിനൽ കമാൻഡ് റൺ ചെയ്യുക:
 
 ```
-npx babel --watch src --out-dir . --presets react-app/prod 
+npx babel --watch src --out-dir . --presets react-app/prod
 ```
 
 >കുറിപ്പ്
