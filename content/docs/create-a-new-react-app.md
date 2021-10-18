@@ -40,10 +40,14 @@ React ടീം പ്രധാനമായി ശുപാർശ ചെയ്�
 **React പഠിക്കുന്നതിനും** **ഒരു [single-page](/docs/glossary.html#single-page-application) React App** മികച്ച രീതിയിൽ ഉണ്ടാക്കിയെടുക്കുന്നതിനുള്ള ഏറ്റവും സുഖകരമായ സാഹചര്യം സൃഷ്ടിക്കുന്ന toolchain ആണ് [Create React App](https://github.com/facebookincubator/create-react-app).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ഇത് നിങ്ങൾക്ക് വേണ്ടി ഏറ്റവും പുതിയ JavaScript ഫീച്ചറുകൾ അടങ്ങിയ  മികച്ച ഒരു ഡെവലപ്പ്മെന്റ് സാഹചര്യം ഒരുക്കിത്തരികയും പ്രൊഡക്ഷനു വേണ്ടി നിങ്ങളുടെ app-നെ optimized ആക്കുകയും ചെയ്യുന്നു. ഇതിനായി നിങ്ങളുടെ കമ്പ്യൂട്ടറിൽ Node-ന്റെ 8.10-നേക്കാൾ ഉയർന്ന പതിപ്പും npm-ന്റെ 5.6-നേക്കാൾ ഉയർന്ന പതിപ്പും ഉണ്ടായിരിക്കണം. ഒരു പ്രൊജക്റ്റ് നിർമ്മിക്കുന്നതിനായി താഴെയുള്ള കമാൻഡ് റൺ ചെയ്യുക:
 =======
 It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have [Node >= 8.10 and npm >= 5.6](https://nodejs.org/en/) on your machine. To create a project, run:
 >>>>>>> bc91fe4101420f98454a59ac34c1cf1d4d4f4476
+=======
+It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have [Node >= 14.0.0 and npm >= 5.6](https://nodejs.org/en/) on your machine. To create a project, run:
+>>>>>>> 4133943e718a77f11627888db2f59f6cb7a73403
 
 ```bash
 npx create-react-app my-app
