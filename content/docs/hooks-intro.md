@@ -99,7 +99,11 @@ React ഡെവലപ്പേഴ്‌സ് പലപ്പോഴും പു
 
 React ലെക് പുതിയ ഒരു ഫീച്ചർ കൂട്ടിച്ചേര്‍ക്കുക എന്ന് പറയുന്നത് വളരെ അധികം ശ്രദ്ധ അർപ്പിച്ചു ചെയ്യണ്ട കാര്യം ആണെന് ഞങ്ങൾ മനസിലാകുന്നു. അത് കൊണ്ട് തന്നെ ഒരു [RFC](https://github.com/reactjs/rfcs/pull/68) ലൂടെ ആണ് Hooks React ലേക് ചേർക്കാൻ ഉള്ള തീരുമാനം ഞങ്ങൾ എടുത്തത്. ഈ പേജിൽ നിങ്ങൾക്കു ഇതിന്റെ പ്രചോദനം, പിന്നിൽ നടന്ന ചർച്ചകൾ ഒക്കെ കാണാൻ സാധിക്കും.
 
+<<<<<<< HEAD
 ഇതിൽ എല്ലാം വളരെ മുഖ്യം ആയി ഒരു കാര്യം, **Hooks ഇപ്പോൾ നിങ്ങൾ എഴുതിയിരിക്കുന്ന class components നു ഒപ്പം ഉപയോഗിക്കാൻ ആകും** എന്നത് ആണ്. Hooks ലേക് മാറാൻ തിരക്കു കൂട്ടേണ്ട ആവശ്യകത ഇല്ല. Hooks ഉൾക്കൊള്ളിക്കാൻ ആയി നിങ്ങളുടെ നിലവിൽ ഉള്ള കോഡ്ബേസസ് മാറ്റി എഴുതേണ്ടത് ഇല്ല എന്ന് ആണ് ഞങ്ങളുടെ അഭിപ്രായം. Hooks എങ്ങനെ എഴുതാം എന്നതിനെ കുറിച്ച് സംഘത്തിലെ അല്ല ഡെവലപ്പേഴ്സിനും ഒരു പരിശീലനം ആവശ്യം ആയി വരാം. ഞങ്ങളുടെ അനുഭവത്തിൽ ചെറിയ components Hooks ലേക് മാറ്റി എഴുതി തുടങ്ങുന്നത് ആണ് എപ്പോഴും നല്ലത്. നിങ്ങൾ Hooks ഉപയോഗിച്ചു നോക്കി എങ്കിൽ ഞങ്ങളെ നിങ്ങളുടെ [അഭിപ്രായം](https://github.com/facebook/react/issues/new) അറിയിക്കാൻ മറക്കരുത്.
+=======
+**Crucially, Hooks work side-by-side with existing code so you can adopt them gradually.** There is no rush to migrate to Hooks. We recommend avoiding any "big rewrites", especially for existing, complex class components. It takes a bit of a mind shift to start "thinking in Hooks". In our experience, it's best to practice using Hooks in new and non-critical components first, and ensure that everybody on your team feels comfortable with them. After you give Hooks a try, please feel free to [send us feedback](https://github.com/facebook/react/issues/new), positive or negative.
+>>>>>>> f2158e36715acc001c8317e20dc4f45f9e2089f3
 
 Hooks ഇപ്പോൾ class ഉപയോഗിക്കാവുന്ന അല്ല ഉപയോഗ മേഖലകളും ഉൾകൊള്ളിക എന്നതാണ് ഞങ്ങളുടെ ഉദ്ദേശം. എങ്കിൽ കൂടി **class components React ൽ നിന്ന് ഒഴിവാക്കാൻ ഉള്ള പ്ലാൻ ഇല്ല**. ഫേസ്ബുക്കിൽ പതിനായിരം വരെ components class വച്ച് ആണ് എഴുതിയിരിക്കുന്നത്. അവയെലാം ഇപ്പോൾ തന്നെ മാറ്റി എഴുതാൻ ആകുകയും ഇല്ല. അതെ സമയം ഇനി Hooks class ന് ഒപ്പം തന്നെ ഉപയോഗിച്ച് പോവുക എന്നത് ആണ് ഞങ്ങൾ ചെയാൻ പോകുന്നത് 
 
