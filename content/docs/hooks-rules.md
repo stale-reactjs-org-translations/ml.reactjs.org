@@ -12,7 +12,11 @@ Hooks ഒരു JavaScript ഫങ്ഷൻ ആണു, പക്ഷെ അവ ഉ
 
 ### Hooks-നെ ടോപ്പ് ലെവെൽ കമ്പോണന്റിൽ നിന്ന് മാത്രം വിളിക്കുക {#only-call-hooks-at-the-top-level}
 
+<<<<<<< HEAD
 **Hooks-നെ ലൂപ്കളിൽ നിന്നോ, കണ്ടീഷനുകളിൽ നിന്നോ Nested ഫങ്ഷനുകളിൽ നിന്നൊ വിളിക്കാൻ പാടുള്ളതല്ല.** പകരം React Hooks എപ്പോഴും ഫങ്ഷന്റെ ടോപ്പ് ലെവലിൽ മാത്രം എഴുതുക. ഇത് വഴി , ഓരോ തവണ കമ്പോണന്റ് റെന്റര്‍ ചെയ്യുമ്പോളും ഒരേ ക്രമത്തിൽ ആണ് വിളിക്കപ്പെടുന്നത് എന്ന് നമുക്ക് ഉറപ്പ് വരുത്താം. അങ്ങനെ React നു ഒന്നിലധികം `useState`നും `useEffect`നും ഫങ്ഷൻ കോളുകളിൽ ഉൾപ്പടെ Hooks ന്റെ അവസ്ഥ ശെരിയായ രീതിയിൽ നിലനിർത്താൻ കഴിയുന്നു. (നിങ്ങൾക്ക് കൂടുതൽ അറിയാൻ താൽപര്യം ഉണ്ടെങ്കിൽ ഞങ്ങൾ ഇതിനെ പറ്റി കൂടുതൽ ഗഹനമായി  [താഴെ](#explanation) പറയുന്നുണ്ട്.)
+=======
+**Don't call Hooks inside loops, conditions, or nested functions.** Instead, always use Hooks at the top level of your React function, before any early returns. By following this rule, you ensure that Hooks are called in the same order each time a component renders. That's what allows React to correctly preserve the state of Hooks between multiple `useState` and `useEffect` calls. (If you're curious, we'll explain this in depth [below](#explanation).)
+>>>>>>> 5f0549c86e7a9c0774e66687d1bc0118a681eb9d
 
 ### Hooks-നെ React ഫങ്ഷനിൽ നിന്ന് മാത്രം വിളിക്കുക {#only-call-hooks-from-react-functions}
 
