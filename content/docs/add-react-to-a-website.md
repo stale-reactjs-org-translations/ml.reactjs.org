@@ -53,9 +53,16 @@ next: create-a-new-react-app.html
 ```html{5,6,9}
   <!-- ... മറ്റു HTML കോഡുകൾ ... -->
 
+<<<<<<< HEAD
   <!-- React ലോഡ് ചെയ്യുന്നു. -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+=======
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
   <!-- നമ്മുടെ React component ലോഡ് ചെയ്യുന്നു. -->
   <script src="like_button.js"></script>
@@ -84,7 +91,11 @@ const domContainer = document.querySelector('#like_button_container');
 ReactDOM.render(e(LikeButton), domContainer);
 ```
 
+<<<<<<< HEAD
 ഈ രണ്ട് വരികൾ നമ്മൾ ആദ്യത്തെ സ്റ്റെപ്പിൽ ചേർത്ത `<div>` കണ്ടെത്തുകയും നമ്മുടെ "ലൈക്ക്" ബട്ടൺ React component അതിനകത്ത് കാണിക്കുകയും ചെയ്യുന്നു.
+=======
+These two lines of code find the `<div>` we added to our HTML in the first step, and then display our "Like" button React component inside of it.
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
 ### അത്രയേ ഉള്ളൂ! {#thats-it}
 
@@ -115,15 +126,19 @@ React ഉപയോഗിക്കുമ്പോൾ ചെയ്തു നോക
 നിങ്ങളുടെ അപ്ലിക്കേഷൻ സ്ക്രിപ്റ്റുകൾ Minify രൂപത്തിൽ ആണെങ്കിൽ അവ പ്രൊഡക്ഷനിൽ ഇടാൻ തയ്യാറായി ഇരിക്കുകയാണ്. നിങ്ങൾ ഡിപ്ലോയ് ചെയ്തിരിക്കുന്ന HTML ലോഡ് ചെയുന്നത് `production.min.js` എന്ന പേരിൽ അവസാനിക്കുന്ന React-ന്റെ പുതിയ പതിപ്പാണെന്നു ഉറപ്പു വരുത്തുക:
 
 ```js
-<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
 ```
 
 നിങ്ങളുടെ script-കൾക്ക് ഒരു മിനിഫിക്കേഷൻ സ്റ്റെപ് ഇല്ല എന്നുണ്ടെങ്കിൽ [ഇവിടെ നോക്കാവുന്നതാണ്](https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3).
 
 ## JSX ഉപയോഗിച്ചുള്ള React പരീക്ഷിക്കാം (നിർബന്ധമില്ല) {#optional-try-react-with-jsx}
 
+<<<<<<< HEAD
 മുകളിലത്തെ ഉദാഹരണങ്ങളിൽ വെബ് ബ്രൗസറുകൾക്ക് സ്വതഃസിദ്ധമായി ഉള്ള കഴിവുകളെ മുന്നിൽ കണ്ട് കൊണ്ടാണ് നമ്മൾ കോഡ് എഴുതിയത്. അത് കൊണ്ടാണ് നമുക്ക് React എന്ത് കാണിക്കണം എന്ന് പറയാൻ ഒരു JavaScript function വിളിക്കേണ്ടി വന്നത്.
+=======
+In the examples above, we only relied on features that are natively supported by browsers. This is why we used a JavaScript function call to tell React what to display:
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
 ```js
 const e = React.createElement;
@@ -149,7 +164,11 @@ return (
 
 ഈ രണ്ട് കോഡുകളും ഒരേ ആവശ്യത്തിനുള്ളതാണ്. **JSX ഉപയോഗിക്കണം എന്ന് [യാതൊരു നിർബന്ധവുമില്ല](/docs/react-without-jsx.html)**, എന്നാൽ React-നോടൊപ്പമോ അല്ലെങ്കിൽ മറ്റു ലൈബ്രറികൾ വഴിയോ UI കോഡുകൾ എഴുതുവാൻ നിരവധി ആളുകൾ ഇത് ഉപയോഗിക്കുന്നുണ്ട്.
 
+<<<<<<< HEAD
 നിങ്ങൾക്ക് [ഈ ഓൺലൈൻ കൺവെർട്ടർ](https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwIwrgLhD2B2AEcDCAbAlgYwNYF4DeAFAJTw4B88EAFmgM4B0tAphAMoQCGETBe86WJgBMAXJQBOYJvAC-RGWQBQ8FfAAyaQYuAB6cFDhkgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.4.3) ഉപയോഗിച്ച് JSX പരീക്ഷിച്ചു നോക്കാം.
+=======
+You can play with JSX using [this online converter](https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwIwrgLhD2B2AEcDCAbAlgYwNYF4DeAFAJTw4B88EAFmgM4B0tAphAMoQCGETBe86WJgBMAXJQBOYJvAC-RGWQBQ8FfAAyaQYuAB6cFDhkgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.15.7).
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
 ### വേഗത്തിൽ JSX പരിശോധിക്കാം {#quickly-try-jsx}
 
@@ -159,7 +178,11 @@ return (
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
+<<<<<<< HEAD
 `type="text/babel"` എന്ന attribute ചേർത്ത് നിങ്ങൾക്ക് ഏതൊരു `<script>` ടാഗിന്റെ കൂടെയും JSX ഉപയോഗിക്കാം. ഉദാഹരണത്തിന് നിങ്ങൾക്ക് [JSX ഉള്ള ഈ HTML ഫയൽ](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html) ഡൌൺലോഡ് ചെയ്ത് പരീക്ഷിച്ചു നോക്കാവുന്നതാണ്.
+=======
+Now you can use JSX in any `<script>` tag by adding `type="text/babel"` attribute to it. Here is [an example HTML file with JSX](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html) that you can download and play with.
+>>>>>>> 71cc6be6182418dec43b72f2a9ef464619cb7025
 
 ലളിതമായ ഡെമോകൾ ഉണ്ടാക്കുന്നതിനും പഠിക്കുന്നതിനും ഈ രീതി മതിയാകും. എന്നാൽ ഇത് നിങ്ങളുടെ വെബ്‌സൈറ്റിന്റെ വേഗത കുറക്കുന്നതിനാൽ **പ്രൊഡക്ഷൻ സാഹചര്യങ്ങൾക്ക് അനുകൂലമല്ല**. നിങ്ങൾ മുന്നോട്ട് പോകുന്നതിനനുസരിച്ച് ഈ പുതിയ `<script>` ടാഗുകളും `type="text/babel"` എന്ന attribute-കളും നമ്മൾ നീക്കം ചെയ്യും. പകരം, അടുത്ത ഭാഗത്തിൽ നമ്മൾ ഒരു JSX പ്രീപ്രോസസ്സർ ഉപയോഗിച്ച്‌ എല്ലാ `<script>` ടാഗുകളെയും കൺവേർട്ട് ചെയ്യും.
 
@@ -184,7 +207,7 @@ return (
 `src` എന്നൊരു ഫോൾഡർ ഉണ്ടാക്കിയ ശേഷം ഈ ടെർമിനൽ കമാൻഡ് റൺ ചെയ്യുക:
 
 ```
-npx babel --watch src --out-dir . --presets react-app/prod 
+npx babel --watch src --out-dir . --presets react-app/prod
 ```
 
 >കുറിപ്പ്
