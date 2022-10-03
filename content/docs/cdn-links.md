@@ -10,18 +10,22 @@ next: release-channels.html
 React, ReactDOM എന്നിവ രണ്ടും ഒരു CDN വഴി ലഭ്യമാണ്.
 
 ```html
-<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 ```
 
 മുകളിലുള്ള പതിപ്പുകൾ ‍ഡെവലെപ്പ്മെന്റിന് മാത്രമുള്ളതാണ്, മാത്രമല്ല പ്രൊഡക്ഷന്  അനുയോജ്യവുമല്ല. Reactന്റെ ചെറുതും ഒപ്റ്റിമൈസ് ചെയ്തതുമായ പതിപ്പുകൾ ഇവിടെ ലഭ്യമാണ്:
 
 ```html
-<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 ```
 
+<<<<<<< HEAD
 `React`,` react-dom` എന്നിവയുടെ നിർദ്ദിഷ്ട പതിപ്പ് ലോഡുചെയ്യാൻ, പതിപ്പ് നമ്പറിനൊപ്പം `16` മാറ്റിസ്ഥാപിക്കുക.
+=======
+To load a specific version of `react` and `react-dom`, replace `18` with the version number.
+>>>>>>> 664dd5736287e01a4557cd03c9a8736682911b34
 
 ###`crossorigin` ആട്രിബ്യൂട്ട് എന്തിനുവേണ്ടി? {#why-the-crossorigin-attribute}
 
