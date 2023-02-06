@@ -25,7 +25,11 @@ next: create-a-new-react-app.html
 
 സങ്കീർണ്ണമായ ടൂളുകളോ ഇൻസ്റ്റാലേഷനുകളോ ഇതിനാവശ്യമില്ല -- **ഈ ഭാഗം പൂർത്തിയാക്കുന്നതിനു ഒരു ഇന്റർനെറ്റ് കണക്ഷനും നിങ്ങളുടെ ഒരല്പം സമയവും  മാത്രം മതി.**
 
+<<<<<<< HEAD
 നിങ്ങളുടെ താല്പര്യാർത്ഥം [മുഴുവൻ ഉദാഹരണം (2KB zip ഫയൽ) ഡൌൺലോഡ് ചെയ്യാം](https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip)
+=======
+Optional: [Download the full example (2KB zipped)](https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/87f0b6f34238595b44308acfb86df6ea43669c08.zip)
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 ### സ്റ്റെപ് 1 : HTML-ലേക്ക് ഒരു DOM കണ്ടെയ്നർ ആഡ് ചെയ്യാം {#step-1-add-a-dom-container-to-the-html}
 
@@ -53,9 +57,16 @@ next: create-a-new-react-app.html
 ```html{5,6,9}
   <!-- ... മറ്റു HTML കോഡുകൾ ... -->
 
+<<<<<<< HEAD
   <!-- React ലോഡ് ചെയ്യുന്നു. -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+=======
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
   <!-- നമ്മുടെ React component ലോഡ് ചെയ്യുന്നു. -->
   <script src="like_button.js"></script>
@@ -75,16 +86,28 @@ next: create-a-new-react-app.html
 >
 >ഈ കോഡിൽ `LikeButton` എന്നൊരു React Component നമ്മൾ ഉണ്ടാക്കിയിരിക്കുന്നു. നിങ്ങൾക്ക് ഒന്നും മനസ്സിലായില്ലെങ്കിലും സാരമില്ല -- React-ന്റെ ബിൽഡിങ് ബ്ലോക്കുകളെ പറ്റി ഇനി വരുന്ന [പ്രായോഗിക ട്യൂട്ടോറിയലി](/tutorial/tutorial.html)ലും [പ്രധാന ആശയങ്ങളുടെ ഗൈഡി](/docs/hello-world.html)ലും നമ്മൾ പഠിച്ചെടുക്കും. ഇപ്പോഴത്തേക്ക് നമുക്ക് ഇത് സ്‌ക്രീനിൽ വരുത്താൻ നോക്കാം.
 
+<<<<<<< HEAD
 **[ഈ സ്റ്റാർട്ടർ കോഡ്](https://gist.github.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js)**-നു ശേഷം `like_button.js` ഫയലിൽ താഴെയായി രണ്ട് വരി കൂടി ചേർക്കുക.
 
 ```js{3,4}
 // ... നിങ്ങൾ പേസ്റ്റ് ചെയ്ത ഭാഗം ...
+=======
+After **[the starter code](https://gist.github.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js)**, add three lines to the bottom of `like_button.js`:
+
+```js{3,4,5}
+// ... the starter code you pasted ...
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 const domContainer = document.querySelector('#like_button_container');
-ReactDOM.render(e(LikeButton), domContainer);
+const root = ReactDOM.createRoot(domContainer);
+root.render(e(LikeButton));
 ```
 
+<<<<<<< HEAD
 ഈ രണ്ട് വരികൾ നമ്മൾ ആദ്യത്തെ സ്റ്റെപ്പിൽ ചേർത്ത `<div>` കണ്ടെത്തുകയും നമ്മുടെ "ലൈക്ക്" ബട്ടൺ React component അതിനകത്ത് കാണിക്കുകയും ചെയ്യുന്നു.
+=======
+These three lines of code find the `<div>` we added to our HTML in the first step, create a React app with it, and then display our "Like" button React component inside of it.
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 ### അത്രയേ ഉള്ളൂ! {#thats-it}
 
@@ -94,7 +117,11 @@ React ഉപയോഗിക്കുമ്പോൾ ചെയ്തു നോക
 
 **[ഈ ഉദാഹരണത്തിന്റെ മുഴുവനായുള്ള സോഴ്സ് കോഡ്](https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605)**
 
+<<<<<<< HEAD
 **[ഈ ഉദാഹരണം ഡൌൺലോഡ് ചെയ്യാം (2KB zipped)](https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/f6c882b6ae18bde42dcf6fdb751aae93495a2275.zip)**
+=======
+**[Download the full example (2KB zipped)](https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/87f0b6f34238595b44308acfb86df6ea43669c08.zip)**
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 ### നുറുങ്ങു വിദ്യ: ഒരു Component വീണ്ടും വീണ്ടും ഉപയോഗിക്കാം {#tip-reuse-a-component}
 
@@ -102,7 +129,11 @@ React ഉപയോഗിക്കുമ്പോൾ ചെയ്തു നോക
 
 [ഈ ഉദാഹരണത്തിന്റെ മുഴുവനായുള്ള സോഴ്സ് കോഡ്](https://gist.github.com/gaearon/faa67b76a6c47adbab04f739cba7ceda)
 
+<<<<<<< HEAD
 [ഈ ഉദാഹരണം ഡൌൺലോഡ് ചെയ്യാം (2KB zipped)](https://gist.github.com/gaearon/faa67b76a6c47adbab04f739cba7ceda/archive/9d0dd0ee941fea05fd1357502e5aa348abb84c12.zip)
+=======
+[Download the full example (2KB zipped)](https://gist.github.com/gaearon/faa67b76a6c47adbab04f739cba7ceda/archive/279839cb9891bd41802ebebc5365e9dec08eeb9f.zip)
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 >കുറിപ്പ്
 >
@@ -115,15 +146,19 @@ React ഉപയോഗിക്കുമ്പോൾ ചെയ്തു നോക
 നിങ്ങളുടെ അപ്ലിക്കേഷൻ സ്ക്രിപ്റ്റുകൾ Minify രൂപത്തിൽ ആണെങ്കിൽ അവ പ്രൊഡക്ഷനിൽ ഇടാൻ തയ്യാറായി ഇരിക്കുകയാണ്. നിങ്ങൾ ഡിപ്ലോയ് ചെയ്തിരിക്കുന്ന HTML ലോഡ് ചെയുന്നത് `production.min.js` എന്ന പേരിൽ അവസാനിക്കുന്ന React-ന്റെ പുതിയ പതിപ്പാണെന്നു ഉറപ്പു വരുത്തുക:
 
 ```js
-<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 ```
 
 നിങ്ങളുടെ script-കൾക്ക് ഒരു മിനിഫിക്കേഷൻ സ്റ്റെപ് ഇല്ല എന്നുണ്ടെങ്കിൽ [ഇവിടെ നോക്കാവുന്നതാണ്](https://gist.github.com/gaearon/42a2ffa41b8319948f9be4076286e1f3).
 
 ## JSX ഉപയോഗിച്ചുള്ള React പരീക്ഷിക്കാം (നിർബന്ധമില്ല) {#optional-try-react-with-jsx}
 
+<<<<<<< HEAD
 മുകളിലത്തെ ഉദാഹരണങ്ങളിൽ വെബ് ബ്രൗസറുകൾക്ക് സ്വതഃസിദ്ധമായി ഉള്ള കഴിവുകളെ മുന്നിൽ കണ്ട് കൊണ്ടാണ് നമ്മൾ കോഡ് എഴുതിയത്. അത് കൊണ്ടാണ് നമുക്ക് React എന്ത് കാണിക്കണം എന്ന് പറയാൻ ഒരു JavaScript function വിളിക്കേണ്ടി വന്നത്.
+=======
+In the examples above, we only relied on features that are natively supported by browsers. This is why we used a JavaScript function call to tell React what to display:
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 ```js
 const e = React.createElement;
@@ -149,7 +184,11 @@ return (
 
 ഈ രണ്ട് കോഡുകളും ഒരേ ആവശ്യത്തിനുള്ളതാണ്. **JSX ഉപയോഗിക്കണം എന്ന് [യാതൊരു നിർബന്ധവുമില്ല](/docs/react-without-jsx.html)**, എന്നാൽ React-നോടൊപ്പമോ അല്ലെങ്കിൽ മറ്റു ലൈബ്രറികൾ വഴിയോ UI കോഡുകൾ എഴുതുവാൻ നിരവധി ആളുകൾ ഇത് ഉപയോഗിക്കുന്നുണ്ട്.
 
+<<<<<<< HEAD
 നിങ്ങൾക്ക് [ഈ ഓൺലൈൻ കൺവെർട്ടർ](https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwIwrgLhD2B2AEcDCAbAlgYwNYF4DeAFAJTw4B88EAFmgM4B0tAphAMoQCGETBe86WJgBMAXJQBOYJvAC-RGWQBQ8FfAAyaQYuAB6cFDhkgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.4.3) ഉപയോഗിച്ച് JSX പരീക്ഷിച്ചു നോക്കാം.
+=======
+You can play with JSX using [this online converter](https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DwIwrgLhD2B2AEcDCAbAlgYwNYF4DeAFAJTw4B88EAFmgM4B0tAphAMoQCGETBe86WJgBMAXJQBOYJvAC-RGWQBQ8FfAAyaQYuAB6cFDhkgA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.15.7).
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 ### വേഗത്തിൽ JSX പരിശോധിക്കാം {#quickly-try-jsx}
 
@@ -159,7 +198,11 @@ return (
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
+<<<<<<< HEAD
 `type="text/babel"` എന്ന attribute ചേർത്ത് നിങ്ങൾക്ക് ഏതൊരു `<script>` ടാഗിന്റെ കൂടെയും JSX ഉപയോഗിക്കാം. ഉദാഹരണത്തിന് നിങ്ങൾക്ക് [JSX ഉള്ള ഈ HTML ഫയൽ](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html) ഡൌൺലോഡ് ചെയ്ത് പരീക്ഷിച്ചു നോക്കാവുന്നതാണ്.
+=======
+Now you can use JSX in any `<script>` tag by adding `type="text/babel"` attribute to it. Here is [an example HTML file with JSX](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html) that you can download and play with.
+>>>>>>> d4e42ab21f0cc7d8b79d1a619654e27c79e10af6
 
 ലളിതമായ ഡെമോകൾ ഉണ്ടാക്കുന്നതിനും പഠിക്കുന്നതിനും ഈ രീതി മതിയാകും. എന്നാൽ ഇത് നിങ്ങളുടെ വെബ്‌സൈറ്റിന്റെ വേഗത കുറക്കുന്നതിനാൽ **പ്രൊഡക്ഷൻ സാഹചര്യങ്ങൾക്ക് അനുകൂലമല്ല**. നിങ്ങൾ മുന്നോട്ട് പോകുന്നതിനനുസരിച്ച് ഈ പുതിയ `<script>` ടാഗുകളും `type="text/babel"` എന്ന attribute-കളും നമ്മൾ നീക്കം ചെയ്യും. പകരം, അടുത്ത ഭാഗത്തിൽ നമ്മൾ ഒരു JSX പ്രീപ്രോസസ്സർ ഉപയോഗിച്ച്‌ എല്ലാ `<script>` ടാഗുകളെയും കൺവേർട്ട് ചെയ്യും.
 
@@ -183,8 +226,8 @@ return (
 
 `src` എന്നൊരു ഫോൾഡർ ഉണ്ടാക്കിയ ശേഷം ഈ ടെർമിനൽ കമാൻഡ് റൺ ചെയ്യുക:
 
-```
-npx babel --watch src --out-dir . --presets react-app/prod 
+```console
+npx babel --watch src --out-dir . --presets react-app/prod
 ```
 
 >കുറിപ്പ്
