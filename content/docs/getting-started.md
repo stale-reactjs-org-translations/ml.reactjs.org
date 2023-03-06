@@ -18,7 +18,17 @@ redirect_from:
   - "docs/environments.html"
 ---
 
+<<<<<<< HEAD
 React ഡോക്യൂമെന്റേഷന്റെയും അനുബന്ധ സ്രോതസ്സുകളുടെയും ഒരു പൊതുവായ അവലോകനമാണ് ഈ പേജ്.
+=======
+> Try the new React documentation.
+> 
+> The new [Quick Start](https://beta.reactjs.org/learn) teaches modern React and includes live examples.
+>
+> The new docs will soon replace this site, which will be archived. [Provide feedback.](https://github.com/reactjs/reactjs.org/issues/3308)
+
+This page is an overview of the React documentation and related resources.
+>>>>>>> ba290ad4e432f47a2a2f88d067dacaaa161b5200
 
 **React** എന്നത് യൂസർ ഇന്റർഫേസുകൾ നിർമ്മിക്കുന്നതിനുള്ള ഒരു JavaScript ലൈബ്രറിയാണ്. React എന്തെല്ലാമാണെന്നത് [ഞങ്ങളുടെ ഹോം പേജിൽ](/) നിന്നും [ഈ ട്യൂട്ടോറിയലിൽ](/tutorial/tutorial.html) നിന്നും പഠിച്ചെടുക്കാം.
 
@@ -37,12 +47,18 @@ React ഡോക്യൂമെന്റേഷന്റെയും അനുബ�
 ### ഓൺലൈൻ പ്ലേ ഗ്രൗണ്ട് {#online-playgrounds}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 React-ൽ കളിച്ചു നോക്കുവാൻ താല്പര്യമുണ്ടെങ്കിൽ നിങ്ങൾക്ക് ഓൺലൈൻ കോഡ് പ്ലേ ഗ്രൗണ്ട് ഉപയോഗിക്കാവുന്നതാണ്. [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), അല്ലെങ്കിൽ [Glitch](https://glitch.com/edit/#!/remix/starter-react-template) എന്നീ പ്ലേ ഗ്രൗണ്ടുകളിൽ ഒരു Hello World template പരിശോധിച്ച് നോക്കാം..
 =======
 If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), [Glitch](https://glitch.com/edit/#!/remix/starter-react-template), or [Stackblitz](https://stackblitz.com/fork/react).
 >>>>>>> bc91fe4101420f98454a59ac34c1cf1d4d4f4476
 
 നിങ്ങളുടെ സ്വന്തം text editor ഉപയോഗിക്കാൻ ആണ് താല്പര്യമെങ്കിൽ നിങ്ങൾക്ക് ഈ [HTML ഫയൽ ഡൌൺലോഡ്](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html) ചെയ്യാം, അത് എഡിറ്റ് ചെയ്ത ശേഷം ഫയൽ സിസ്റ്റം വഴി നിങ്ങളുടെ ബ്രൗസറിൽ തുറന്നു നോക്കാം. വേഗത കുറഞ്ഞ കോഡ് രൂപാന്തരം ആയതിനാൽ ലളിതമായ ഡെമോക്ക് മാത്രമേ ഞങ്ങൾ ഇത് ശുപാർശ ചെയ്യുന്നുള്ളൂ.
+=======
+If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on [CodePen](codepen://hello-world), [CodeSandbox](https://codesandbox.io/s/new), or [Stackblitz](https://stackblitz.com/fork/react).
+
+If you prefer to use your own text editor, you can also [download this HTML file](https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html), edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we'd only recommend using this for simple demos.
+>>>>>>> ba290ad4e432f47a2a2f88d067dacaaa161b5200
 
 ### ഒരു വെബ്‌സൈറ്റിലോട്ട് React ചേർക്കാം {#add-react-to-a-website}
 
@@ -123,7 +139,11 @@ React ടീം പുറത്തു വിടുന്ന പുതിയ വ�
 
 നിങ്ങൾക്ക് ട്വിറ്ററിലും [@reactjs അക്കൗണ്ട്](https://twitter.com/reactjs) ഫോളോ ചെയ്യാം, നിങ്ങൾ ബ്ലോഗ് മാത്രം വായിക്കുന്ന വ്യക്തിയാണെങ്കിലും അത്യന്താപേക്ഷിതമായ കൂട്ടിച്ചേർക്കലുകൾ ഒന്നും തന്നെ നിങ്ങൾക്ക് നഷ്ടപ്പെടില്ല.
 
+<<<<<<< HEAD
 എല്ലാ React റിലീസിനും ബ്ലോഗ് പ്രസിദ്ധീകരണം ഉണ്ടായിക്കൊള്ളണം എന്നില്ല, എന്നാൽ ഓരോ റിലീസിന്റേയും വിശദമായ വിവരണം [React റെപ്പോസിറ്ററിയിലെ `CHANGELOG.md` ഫയലി](https://github.com/facebook/react/blob/master/CHANGELOG.md)ലും [റിലീസസ്](https://github.com/facebook/react/releases) പേജിലും ഉണ്ടായിരിക്കുന്നതാണ്. 
+=======
+Not every React release deserves its own blog post, but you can find a detailed changelog for every release in the [`CHANGELOG.md` file in the React repository](https://github.com/facebook/react/blob/main/CHANGELOG.md), as well as on the [Releases](https://github.com/facebook/react/releases) page.
+>>>>>>> ba290ad4e432f47a2a2f88d067dacaaa161b5200
 
 ## ഡോക്യൂമെന്റേഷൻ പതിപ്പുകൾ {#versioned-documentation}
 
